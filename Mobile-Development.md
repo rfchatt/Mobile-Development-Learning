@@ -5,7 +5,9 @@ Il gère les ressources matérielles (écran tactile, caméra, micro…), exécu
 ### Exemples des S.E 
 S.E : Système d'Expoitation
 - iOS (iPhone OS) -> Apple <br>
-  > iOS est un Système fermé (Apple seulement) sur le noyau Unix
+  > iOS est un Système fermé (Apple seulement) sur le noyau Unix <br>
+  <img width="10%" height="10%" alt="img icons8" src="https://github.com/user-attachments/assets/d8246e14-b18e-45a4-924f-e795d0e6d36b" />
+
 - Andoid -> Google <br>
   > Android est un Système Open-Source (80% des Smartphones) sur le noyau Linux
 - Harmony OS -> Huawei
