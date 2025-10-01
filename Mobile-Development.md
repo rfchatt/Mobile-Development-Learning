@@ -10,7 +10,7 @@ S.E : Système d'Expoitation
   > Android est un Système Open-Source (80% des Smartphones) sur le noyau Linux
 - Harmony OS -> Huawei
 ***
-<img align="center" width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/93164248-e2d2-42e1-b08a-d4d779a6d241" /><br>
+<img width="50%" height="50%" alt="image-removebg-preview" src="https://github.com/user-attachments/assets/328c791c-333b-475e-a868-d1ff01db1533" /><br>
 ### Système Embarque :
 - Système Informatique dédié a une tache spécifique
 - Ex : Système Automobile,..
