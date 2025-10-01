@@ -6,7 +6,8 @@ Il gère les ressources matérielles (écran tactile, caméra, micro…), exécu
 S.E : Système d'Expoitation
 - iOS (iPhone OS) -> Apple
 - Andoid -> Google
-- Harmony OS -> Huawei <br>
+- Harmony OS -> Huawei
+***
 <img align="center" width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/93164248-e2d2-42e1-b08a-d4d779a6d241" /><br>
 ### Système Embarque :
 - Système Informatique dédié a une tache spécifique
