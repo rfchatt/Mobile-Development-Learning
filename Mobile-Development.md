@@ -7,14 +7,14 @@ S.E : Système d'Expoitation
 - iOS (iPhone OS) -> Apple
 - Andoid -> Google
 - Harmony OS -> Huawei
-<img align="center" width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/93164248-e2d2-42e1-b08a-d4d779a6d241" />
-#### Système Embarque :
+<img align="center" width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/93164248-e2d2-42e1-b08a-d4d779a6d241" /><br>
+### Système Embarque :
 - Système Informatique dédié a une tache spécifique
 - Ex : Système Automobile,..
-#### Systéme Mobile :
+### Systéme Mobile :
 - Système concu pour fonctionner sur des appareils mobiles
 - Ex : Andoid, iOS, Harmony OS,..
-#### Système Temps Réel :
+### Système Temps Réel :
 - Système Informatique garantit que les taches exécutées dans délais stricts
 - Ex : Contrôle industriel, médical,..
 
