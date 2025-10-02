@@ -112,3 +112,25 @@ class main10 {
         System.out.println("le factorielle de " + n + " est : " + factorielle);
     }
 }
+
+// TP 8
+
+class main11 {
+    public static void main(String[] args) {
+        Scanner Objet = new Scanner(System.in);
+
+        for (int i = 1; i <= 100; i++) {
+
+            if (i % 3 == 0) {
+                System.out.print(i+" 3z \n");
+            } else if (i % 5 == 0) {
+                System.out.println(i+" 5z \n");
+            } else if (i % 3 == 0 || i % 5 == 0) {
+                System.out.println(i+" 3z5z \n");
+            } else {
+                System.out.print(i+"\n");
+            }
+        }
+
+    }
+}
