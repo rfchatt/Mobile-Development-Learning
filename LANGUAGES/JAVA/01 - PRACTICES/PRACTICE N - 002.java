@@ -134,3 +134,21 @@ class main11 {
 
     }
 }
+
+// TP 9
+
+class main12 {
+    public static void main(String[] args) {
+        int foix = 1;
+        int max_foix = 3;
+        int result = (int)(Math.random() * 6) + 1;
+
+        System.out.println("Tentative N " + foix + " : " + result);
+
+        while (result == 6 && foix < max_foix) {
+            foix++;
+            result = (int)(Math.random() * 6) + 1;
+            System.out.println("Tentative N " + foix + " : " + result);
+        }
+    }
+}
