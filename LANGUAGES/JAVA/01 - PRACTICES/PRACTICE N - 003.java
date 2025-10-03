@@ -64,3 +64,26 @@ class moyenne {
 
 // Exercise 3
 
+class compter {
+    public static void main(String[] args) {
+        Scanner Objet2 = new Scanner(System.in);
+
+        int counter = 0;
+
+        int[] table = new int[5];
+        for (int i = 0; i < table.length; i++) {
+            System.out.println("Entrez un nombre : ");
+            table[i] = Objet2.nextInt();
+        }
+        for (int i = 0; i < table.length; i++) {
+            if (table[i] % 2 == 0) {
+                counter++;
+            }
+        }
+        System.out.println("Le nombre des élément pairs : " + counter);
+    }
+}
+
+
+
+
