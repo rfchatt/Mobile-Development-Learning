@@ -15,3 +15,6 @@
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/847218eb-143c-4a66-b3c5-23b31514af21" />
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/f33a9bbd-6d2b-475d-8b93-6bcad727334e" />
 
+# Practice N-003
+### Questions
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/49e9630e-b393-4f18-ad35-a154ad2650ff" />
