@@ -84,6 +84,31 @@ class compter {
     }
 }
 
+// Exercise 4
 
+class presence {
+    public static void main(String[] args) {
+        Scanner Objet3 = new Scanner(System.in);
 
+        int[] table = new int[5];
+        for (int i = 0; i < table.length; i++) {
+            System.out.println("Entrez un nombre : ");
+            table[i] = Objet3.nextInt();
+        }
 
+        System.out.println("Entrez un N d'étudiant pour checker le presence : ");
+        int checkNombre = Objet3.nextInt();
+        boolean checkPresence = false;
+        for (int i = 0; i < table.length; i++) {
+            if (table[i] == checkNombre) {
+                checkPresence = true;
+                break;
+            }
+        }
+        if (checkPresence) {
+            System.out.println("l'etudiant numero " + checkNombre + " est présent");
+        } else {
+            System.out.println("l'etudiant numero " + checkNombre + " est absent");
+        }
+    }
+}
