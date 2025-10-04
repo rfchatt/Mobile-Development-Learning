@@ -1,3 +1,4 @@
+import java.util.Scanner;
 // TP 4
 // Exercise 1
 
