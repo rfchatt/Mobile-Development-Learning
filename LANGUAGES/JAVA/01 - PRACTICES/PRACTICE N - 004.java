@@ -28,3 +28,40 @@ class main{
         System.out.println("\n___________________");
     }
 }
+
+// Exercise 2
+
+class main2 {
+    public static void main(String[] args) {
+        Scanner Objet2 = new Scanner(System.in);
+
+        int[][] tableau2 = new int [3][3];
+
+        for (int i = 0; i < tableau2.length; i++) {
+            for (int j = 0; j < tableau2[i].length; j++) {
+                System.out.println("Enter the value of ligne " + i + " et Column " + j + " : ");
+                tableau2[i][j] = Objet2.nextInt();
+            }
+        }
+
+        System.out.println("La sommes des lignes :");
+        for (int i = 0; i < tableau2.length; i++) {
+            int somme_lignes = 0;
+            for (int j = 0; j < tableau2[i].length; j++) {
+                somme_lignes += tableau2[i][j];
+            }
+            System.out.println("ligne " + i + " est : " + somme_lignes);
+        }
+
+        System.out.println("-----------------------");
+        System.out.println("La sommes des columns :");
+
+        for (int j = 0; j < tableau2[0].length; j++) {
+            int somme_columns = 0;
+            for (int i = 0; i < tableau2.length; i++) {
+                somme_columns += tableau2[i][j];
+            }
+            System.out.println("ligne " + j + " est : " + somme_columns);
+        }
+    }
+}
