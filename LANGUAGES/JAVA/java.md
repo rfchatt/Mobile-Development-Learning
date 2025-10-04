@@ -15,14 +15,14 @@
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/847218eb-143c-4a66-b3c5-23b31514af21" />
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/f33a9bbd-6d2b-475d-8b93-6bcad727334e" /><br>
-<a href="https://raw.githubusercontent.com/rfchatt/Mobile-Development-Learning/blob/main/LANGUAGES/JAVA/01%20-%20PRACTICES/PRACTICE%20N%20-%20002.java">Practice N-001 Solutions</a>
+<a href="https://raw.githubusercontent.com/rfchatt/Mobile-Development-Learning/main/LANGUAGES/JAVA/01%20-%20PRACTICES/PRACTICE%20N%20-%20002.java">Practice N-002 Solutions</a>
 
 # Practice N-003
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/49e9630e-b393-4f18-ad35-a154ad2650ff" /><br>
-<a href="https://raw.githubusercontent.com/rfchatt/Mobile-Development-Learning/main/LANGUAGES/JAVA/01%20-%20PRACTICES/PRACTICE%20N%20-%20001.java">Practice N-001 Solutions</a>
+<a href="https://raw.githubusercontent.com/rfchatt/Mobile-Development-Learning/main/LANGUAGES/JAVA/01%20-%20PRACTICES/PRACTICE%20N%20-%20003.java">Practice N-003 Solutions</a>
 
 # Practice N-004
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/3f9fa69c-a327-42f0-a594-faefb314b9f3" /><br>
-<a href="https://raw.githubusercontent.com/rfchatt/Mobile-Development-Learning/main/LANGUAGES/JAVA/01%20-%20PRACTICES/PRACTICE%20N%20-%20001.java">Practice N-001 Solutions</a>
+<a href="https://raw.githubusercontent.com/rfchatt/Mobile-Development-Learning/main/LANGUAGES/JAVA/01%20-%20PRACTICES/PRACTICE%20N%20-%20004.java">Practice N-004 Solutions</a>
