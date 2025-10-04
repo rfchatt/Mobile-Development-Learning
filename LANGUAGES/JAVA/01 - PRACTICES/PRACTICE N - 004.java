@@ -65,3 +65,36 @@ class main2 {
         }
     }
 }
+
+// Exercise 3
+
+class main3 {
+    public static void main (String[] args) {
+        Scanner Objet3 = new Scanner(System.in);
+
+        int[][] tableau3 = new int[2][3];
+
+        for (int i = 0; i < tableau3.length; i++) {
+            for (int j = 0; j < tableau3[i].length; j++) {
+                System.out.print("Enter the value of line " + i + " column " + j + " : ");
+                tableau3[i][j] = Objet3.nextInt();
+            }
+        }
+
+        System.out.println("--- Le tableau original : ---");
+        for (int i = 0; i < tableau3.length; i++) {
+            for (int j = 0; j < tableau3[i].length; j++) {
+                System.out.print(tableau3[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println("=== Le tableau transposé : ===");
+        for (int j = 0; j < tableau3[0].length; j++) {
+            for (int i = 0; i < tableau3.length; i++) {
+                System.out.print(tableau3[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
