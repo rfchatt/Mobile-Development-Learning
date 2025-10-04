@@ -9,6 +9,7 @@
 # Practice N-001
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/5cacd3f4-984b-4415-b5dc-b7ad9cdb65fd" />
+<a href"https://github.com/rfchatt/Mobile-Development-Learning/blob/main/LANGUAGES/JAVA/01%20-%20PRACTICES/PRACTICE%20N%20-%20001.java">Practice N-001 Solutions</a>
 
 # Practice N-002
 ### Questions
