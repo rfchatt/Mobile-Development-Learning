@@ -98,3 +98,43 @@ class main3 {
         }
     }
 }
+
+
+// Exercise 4
+
+class main4 {
+    public static void main(String[] args) {
+        Scanner Objet4 = new Scanner(System.in);
+
+        int[][] tableau4 = new int[3][4];
+
+        System.out.println("Remplissage de tableau : ");
+        for (int i = 0; i < tableau4.length; i++) {
+            for (int j = 0; j < tableau4[i].length; j++) {
+                System.out.print("Ligne " + i + " Colonne " + j + " : ");
+                tableau4[i][j] = Objet4.nextInt();
+            }
+        }
+
+        int max = 0;
+        for (int i = 0; i < tableau4.length; i++) {
+            for (int j = 0; j < tableau4[i].length; j++) {
+                if (max < tableau4[i][j]) {
+                    max = tableau4[i][j];
+                }
+            }
+        }
+        System.out.println("La valeur max : " + max);
+
+        int min = 0;
+        for (int i = 0; i < tableau4.length; i++) {
+            for (int j = 0; j < tableau4[i].length; j++) {
+                if (min > tableau4[i][j]) {
+                    min = tableau4[i][j];
+                }
+            }
+        }
+        System.out.println("La valeur min : " + min);
+
+    }
+}
