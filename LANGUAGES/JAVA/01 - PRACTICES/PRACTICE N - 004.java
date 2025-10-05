@@ -138,3 +138,45 @@ class main4 {
 
     }
 }
+
+// Exercise 5
+
+class main5 {
+    public static void main (String[] args) {
+        Scanner Objet5 = new Scanner(System.in);
+
+        int [][] tableau5 = new int[3][3];
+
+        System.out.println("Remplissage de Tableau : ");
+        for (int i = 0; i < tableau5.length; i++) {
+            for (int j = 0; j < tableau5[i].length; j++) {
+                System.out.print("Ligne " + i + " Colonne " + j + " : ");
+                tableau5[i][j] = Objet5.nextInt();
+            }
+        }
+
+        System.out.println("--- Affichage de Tableau ---");
+        for (int i = 0; i < tableau5.length; i++) {
+            for (int j = 0; j < tableau5[i].length; j++) {
+                System.out.print(tableau5[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        int somme = 0;
+        for (int i = 0; i < tableau5.length; i++) {
+            for (int j = 0; j < tableau5[i].length; j++) {
+                somme += tableau5[i][j];
+            }
+        }
+        System.out.println("La somme des Lignes et Colonnes : " + somme);
+
+        int moyenne = 0;
+        for (int i = 0; i < tableau5.length; i++) {
+            for (int j = 0; j < tableau5[i].length; j++) {
+                moyenne = somme / (tableau5.length * tableau5[0].length);
+            }
+        }
+        System.out.println("Le moyenne de Tableau : " + moyenne);
+    }
+}
