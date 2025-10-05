@@ -4,7 +4,7 @@ import java.util.Scanner;
 // Exercise 1
 
 class main{
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         Scanner Objet = new Scanner(System.in);
 
         int[][] tableau2D = new int[2][3];
