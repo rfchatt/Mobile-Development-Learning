@@ -12,7 +12,7 @@ S.E : Système d'Expoitation
   > Android est un Système Open-Source (80% des Smartphones) sur le noyau Linux <br>
   <img width="10%" height="10%" alt="android" src="https://github.com/user-attachments/assets/935cccc3-240a-48e7-8e75-1d9c015135b4" />
 
-- Harmony OS -> Huawei
+- Harmony OS -> Huawei <br>
   <img width="10%" height="10%" alt="harmonyOS" src="https://github.com/user-attachments/assets/ade96dc4-ea9d-4564-8ceb-81a453fa661b" />
 
 ***
