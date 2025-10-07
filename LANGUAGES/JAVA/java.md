@@ -35,7 +35,7 @@
 # Practice N-006
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/a741f21e-87fa-4574-a1e5-fae72468b033" /><br>
-<a href="https://raw.githubusercontent.com/rfchatt/Mobile-Development-Learning/main/LANGUAGES/JAVA/01%20-%20PRACTICES/PRACTICE%20N%20-%20006.java">Practice N-005 Solutions</a>
+<a href="https://raw.githubusercontent.com/rfchatt/Mobile-Development-Learning/main/LANGUAGES/JAVA/01%20-%20PRACTICES/PRACTICE%20N%20-%20006.java">Practice N-006 Solutions</a>
 
 
 # Ressources
