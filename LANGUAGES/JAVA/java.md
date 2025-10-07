@@ -32,7 +32,7 @@
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/70b882db-8fa9-4f51-ac75-9a68cf1d3b17" /><br>
 <a href="https://raw.githubusercontent.com/rfchatt/Mobile-Development-Learning/main/LANGUAGES/JAVA/01%20-%20PRACTICES/PRACTICE%20N%20-%20005.java">Practice N-005 Solutions</a>
 
-# Practice N-005
+# Practice N-006
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/a741f21e-87fa-4574-a1e5-fae72468b033" />
 
