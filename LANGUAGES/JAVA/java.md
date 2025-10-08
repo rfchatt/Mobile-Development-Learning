@@ -48,5 +48,10 @@
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/eb2c4dff-7ad3-4058-bb7d-d140a483081a" /><br>
 <a href="https://raw.githubusercontent.com/rfchatt/Mobile-Development-Learning/main/LANGUAGES/JAVA/01%20-%20PRACTICES/PRACTICE%20N%20-%20008.java">Practice N-008 Solutions</a>
 
+# Practice N-009
+### Questions
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/eb2c4dff-7ad3-4058-bb7d-d140a483081a" /><br>
+ 
+
 # Ressources
 [Java Partie 1.pdf](https://github.com/user-attachments/files/22730824/Java.pdf)
