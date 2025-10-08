@@ -22,7 +22,6 @@ public class SmartWash {
 
 // Main2.java
 
-import POO1.Voiture;
 import POO2.SmartWash;
 
 public class Main2 {
