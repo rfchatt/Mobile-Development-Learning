@@ -104,3 +104,47 @@ class Main2 {
 
 // Ex 3
 
+import java.util.Random;
+
+class Main3 {
+
+    private static Random Objet1 = new Random();
+
+    public static int generNumbre (int min, int max) {
+        return Objet1.nextInt(max - min + 1) + min;
+    }
+
+    public static char generOperateur () {
+        char[] operateurs = {'+', '-', '*'};
+        return operateurs[Objet1.nextInt(operateurs.length)];
+    }
+
+    public static int resultCalcule (int nombre1, int nombre2, char operateur) {
+        switch (operateur) {
+            default :
+                return 0;
+            case '+' :
+                return nombre1 + nombre2;
+            case '-' :
+                return nombre1 - nombre2;
+            case '*' :
+                return nombre1 * nombre2;
+        }
+    }
+
+    public static void affiche (boolean correct) {
+        if (correct) {
+            System.out.println("Bravo !");
+        } else {
+            System.out.println("Dommage...");
+        }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(generNumbre(1997, 2013));
+        System.out.println(generOperateur());
+        System.out.println(resultCalcule(30, 27, '-'));
+    }
+
+}
+
