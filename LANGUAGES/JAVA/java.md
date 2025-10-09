@@ -44,14 +44,20 @@
 <a href="https://raw.githubusercontent.com/rfchatt/Mobile-Development-Learning/main/LANGUAGES/JAVA/01%20-%20PRACTICES/PRACTICE%20N%20-%20007.java">Practice N-007 Solutions</a>
 
 # Practice N-008
-### Questions
+### ( TP 1 - OOP ) Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/eb2c4dff-7ad3-4058-bb7d-d140a483081a" /><br>
 <a href="https://raw.githubusercontent.com/rfchatt/Mobile-Development-Learning/main/LANGUAGES/JAVA/01%20-%20PRACTICES/PRACTICE%20N%20-%20008.java">Practice N-008 Solutions</a>
 
 # Practice N-009
-### Questions
+### ( TP 2 - OOP ) Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/b7601bd9-3d39-4181-8990-042a5fc19c6e" /><br>
+<a href="https://raw.githubusercontent.com/rfchatt/Mobile-Development-Learning/main/LANGUAGES/JAVA/01%20-%20PRACTICES/PRACTICE%20N%20-%20009.java">Practice N-009 Solutions</a>
 
+# Practice N-010
+### ( TP 3 - OOP ) Questions
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/0ebf3300-5b64-475a-8e05-ef3c2ed14640" /><br>
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/b34af3a9-29ee-4367-8f12-5416b7694fd1" />
+<a href="https://raw.githubusercontent.com/rfchatt/Mobile-Development-Learning/main/LANGUAGES/JAVA/01%20-%20PRACTICES/PRACTICE%20N%20-%20010.java">Practice N-010 Solutions</a>
 
 # Ressources
 [Java Partie 1.pdf](https://github.com/user-attachments/files/22730824/Java.pdf)
