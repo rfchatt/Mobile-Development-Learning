@@ -56,7 +56,7 @@
 # Practice N-010
 ### ( TP 3 - OOP ) Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/0ebf3300-5b64-475a-8e05-ef3c2ed14640" /><br>
-<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/b34af3a9-29ee-4367-8f12-5416b7694fd1" />
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/b34af3a9-29ee-4367-8f12-5416b7694fd1" /><br>
 <a href="https://raw.githubusercontent.com/rfchatt/Mobile-Development-Learning/main/LANGUAGES/JAVA/01%20-%20PRACTICES/PRACTICE%20N%20-%20010.java">Practice N-010 Solutions</a>
 
 # Ressources
