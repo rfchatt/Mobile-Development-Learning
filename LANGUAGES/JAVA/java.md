@@ -60,4 +60,5 @@
 <a href="https://raw.githubusercontent.com/rfchatt/Mobile-Development-Learning/main/LANGUAGES/JAVA/01%20-%20PRACTICES/PRACTICE%20N%20-%20010.java">Practice N-010 Solutions</a>
 
 # Ressources
-[Java Partie 1.pdf](https://github.com/user-attachments/files/22730824/Java.pdf)
+[Java Partie 1 & 2.pdf](https://github.com/user-attachments/files/22864796/Java.Partie.2.pdf)
+
