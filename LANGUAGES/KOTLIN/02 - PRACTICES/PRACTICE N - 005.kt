@@ -1,7 +1,9 @@
+// TP 1 
+
 fun main() {
   
     // Exercise 1 :
-  
+
     // 1)
     val nom: String? = "Abderrafie";
     var estEtudiant: Boolean? = true;
@@ -33,7 +35,6 @@ fun main() {
     // --------------------------------
 
     // Exercise 2 :
-
     // 1)
     fun evaluerNote (note: Int) : String {
         return when (note) {
@@ -65,7 +66,7 @@ fun main() {
         }
     }
 
-    println("-- Exercise 2 -- ")
+    println("-- Exercise 2-- ")
     val notesT = listOf(8, 13, 15, 17, 20, -3)
     println("L'Évaluation des notes: ")
     notesT.forEach { note ->
@@ -76,6 +77,13 @@ fun main() {
     afficherResultats(listOf())
     println("Moyenne : ${calculerMoyenne(listOf())}")
 
-    
+    // ----------------------------------
+
+    // Exercise 3
+
+    val livres = listOf("Politics Lows", "Science Of Community", "A-Z", "Be A Man", "Self Development", "Arabs Culture", "Art Of Silence", "Do it now", "Casa", "African Guy")
+    fun rechercherLivres(motCle: String) {
+        
+    }
 
 }
