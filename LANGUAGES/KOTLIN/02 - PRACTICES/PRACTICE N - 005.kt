@@ -1,4 +1,4 @@
-// TP 1 
+// TP 1
 
 fun main() {
   
@@ -81,9 +81,57 @@ fun main() {
 
     // Exercise 3
 
-    val livres = listOf("Politics Lows", "Science Of Community", "A-Z", "Be A Man", "Self Development", "Arabs Culture", "Art Of Silence", "Do it now", "Casa", "African Guy")
-    fun rechercherLivres(motCle: String) {
-        
+    println("-- Exercise 3 --")
+    // 1)
+    val livres = listOf("Politics Lows", "Science Of Community Ep 1", "A-Z", "Be A Man", "Self Development", "Arabs Culture", "Art Of Silence", "Do it now", "Casa", "African Guy")
+    println("List : ${livres}")
+
+    // 2)
+    fun rechercherLivres(livres: List<String>, motCle: String): Boolean {
+        return motCle in livres
     }
+    println("Mot Clé Exists in List ? : ${rechercherLivres(livres, "Be A Man")}")
+
+    // 3)
+    var lengthMax : Int = 0;
+    var lengthMin : Int = 100;
+    var nombreTotal : Int = livres.size
+    fun statistiquesLivres () {
+        for (livre in livres) {
+            if (lengthMax < livre.length) {
+                lengthMax = livre.length
+            }
+            if (lengthMin > livre.length) {
+                lengthMin = livre.length
+            }
+        }
+        println("Livre le plus Long : $lengthMax")
+        println("Livre le plus court : $lengthMin")
+        println("nombre Total des Livres : $nombreTotal")
+    }
+    println(statistiquesLivres())
+
+    // 4)
+    var court = mutableListOf<String>();
+    var moyen = mutableListOf<String>();
+    var long = mutableListOf<String>();
+    fun livresParLongueur () {
+        for (livre in livres) {
+            if (livre.length < 15) {
+                court.add(livre)
+            }
+            if (livre.length >= 15 && livre.length <= 20) {
+                moyen.add(livre)
+            }
+            if (livre.length > 20) {
+                long.add(livre)
+            }
+        }
+    }
+    livresParLongueur()
+    println("Libres court (<15 car) : $court")
+    println("Libres moyen (>= 15 et <= 20 car) : $moyen")
+    println("Libres court (>20 car) : $long")
 
 }
+
