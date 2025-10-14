@@ -1,6 +1,6 @@
 // Exercise 1
 
-class MaClass {
+class MaClass { 
 
     // 1)
     var x: Int = 23;
