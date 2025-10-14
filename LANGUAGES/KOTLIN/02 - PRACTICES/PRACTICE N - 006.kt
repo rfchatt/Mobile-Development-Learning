@@ -1,3 +1,5 @@
+import kotlin.math.PI
+
 // Exercise 1
 
 class MaClass {
@@ -93,8 +95,64 @@ class Maison (adress: String, nbrEtage: Int, couleur: String, surface: Int) {
 
 }
 
+// Exercise 3
+
+// 1)
+open class Forme (var nom: String) {
+
+    open fun surface (): Double {
+        return 0.0;
+    }
+    open fun perimetre (): Double {
+        return 0.0;
+    }
+    open fun afficher_details () {
+        println("Le nom : $nom, Surface : ${surface()}, Perimetre : ${perimetre()}")
+    }
+}
+// 2) classe Carrée
+class Carre (nom: String, var c: Double) : Forme (nom = nom) {
+    override fun surface(): Double {
+        return c * c
+    }
+    override fun perimetre(): Double {
+        return 4 * c
+    }
+}
+// 2) .. classe Rectangle
+class Rectangle (nom: String,L: Double,l: Double) : Forme (nom = nom) {
+    var _L = L
+    var _l = l
+    override fun surface(): Double {
+        return _L * _l
+    }
+    override fun perimetre(): Double {
+        return 2 * (_L + _l)
+    }
+}
+// 2) .. classe Cercle
+class Cercle (nom: String,r: Double) : Forme (nom = nom) {
+    var _r = r
+    override fun surface(): Double {
+        return PI * _r * _r
+    }
+    override fun perimetre(): Double {
+        return 2 * PI * _r
+    }
+}
+
+
+
+
+
 
 // -------------------------------
+
+
+
+
+
+
 
 fun main () {
 
@@ -130,5 +188,14 @@ fun main () {
     maison.setCouleur("Blanch")
     maison.setSurface(300)
     maison.affiche()
+
+    println()
+
+    var forme = Forme("Forme")
+    forme.afficher_details()
+    var rectangle = Rectangle("Rectangle", 30.0, 25.3)
+    rectangle.afficher_details()
+    var cercle = Cercle("Cercle", 9.0)
+    cercle.afficher_details()
 
 }
