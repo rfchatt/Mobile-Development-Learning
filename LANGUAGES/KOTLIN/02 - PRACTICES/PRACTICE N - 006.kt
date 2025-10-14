@@ -1,6 +1,6 @@
 // Exercise 1
 
-class MaClass { 
+class MaClass {
 
     // 1)
     var x: Int = 23;
@@ -41,10 +41,10 @@ class Personne (nom: String, prenom: String, adresse: String, age: Int) {
     // 3)
 class Voiture (marque: String, modele: Int, couleur: String, kilometrage: Int) {
 
-    var _marque: String = marque
-    var _modele: Int = modele
-    var _couleur: String = couleur
-    var _kilometrage: Int = kilometrage
+    var _marque = marque
+    var _modele = modele
+    var _couleur = couleur
+    var _kilometrage = kilometrage
 
     fun setMarque (marqueModifier: String) {
         _marque = marqueModifier;
@@ -65,21 +65,70 @@ class Voiture (marque: String, modele: Int, couleur: String, kilometrage: Int) {
 
 }
 
+// Exercise 2
+
+class Maison (adress: String, nbrEtage: Int, couleur: String, surface: Int) {
+
+    var _adress = adress
+    var _nbrEtage = nbrEtage
+    var _couleur = couleur
+    var _surface = surface
+
+    fun setAdresse (adresseModifier: String) {
+        _adress = adresseModifier
+    }
+    fun setEtage (etageModifier: Int) {
+        _nbrEtage = etageModifier
+    }
+    fun setCouleur (couleurModifier: String) {
+        _couleur = couleurModifier
+    }
+    fun setSurface (surfaceModifier: Int) {
+        _surface = surfaceModifier
+    }
+
+    fun affiche () {
+        println("L'Adresse : $_adress, Nbr d'étages : $_nbrEtage, Couleur : $_couleur, Surface : $_surface")
+    }
+
+}
 
 
 // -------------------------------
 
 fun main () {
 
-    println("== Exercise 1 ==")
-
     var maclasse = MaClass()
     maclasse.affiche()
 
+    println()
+
     var personne = Personne("Chate", "Abderrafie", "Tanger", 20)
     personne.affiche()
+    personne.setNom("Chatt")
+    personne.setPrenom("Abdo")
+    personne.setAdresse("Gzenaya")
+    personne.setAge(30)
+    personne.affiche()
 
-    var voiture = Voiture("Dacia", 2020, "Noir", 123000)
+    println()
+
+    var voiture = Voiture("Dacia Logan", 2019, "Noir", 89000)
     voiture.affiche()
+    voiture.setMarque("Dacia Sandero")
+    voiture.setModele(2023)
+    voiture.setCouleur("Bleu")
+    voiture.setKilometrage(44000)
+    voiture.affiche()
+
+    println()
+
+    var maison = Maison("Boulvard", 1, "Blanch", 100)
+    maison.affiche()
+    maison.setAdresse("Rmillat")
+    maison.setEtage(2)
+    maison.setCouleur("Blanch")
+    maison.setSurface(300)
+    maison.affiche()
 
 }
