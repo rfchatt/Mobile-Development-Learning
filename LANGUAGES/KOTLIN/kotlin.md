@@ -32,7 +32,7 @@
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/2564551d-73f6-43ab-929c-fdb868beada5" /><br>
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/34f37ffd-cc37-47ac-af14-388912b7361d" />
 
-# Practice N-006 (TP 3 - OOP)
+# Practice N-007 (TP 3 - OOP)
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/7805bc78-513a-4e99-b18b-ebb202adb11b" />
 
