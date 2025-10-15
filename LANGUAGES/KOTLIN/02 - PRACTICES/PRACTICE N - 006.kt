@@ -141,17 +141,48 @@ class Cercle (nom: String,r: Double) : Forme (nom = nom) {
     }
 }
 
+// Exercise 4
 
+// 1)
 
+open class Vehicule (var marque: String, var modele: Int) {
 
+    fun afficher_details () {
+        println("La marque : $marque, Modele : $modele")
+    }
+
+    open fun se_deplacer () {
+        print(" se déplacer en : ")
+    }
+
+}
+
+class Avion1 (marque: String, modele: Int, ailes: Int, nbrRoues: Int) : Vehicule (marque = marque, modele = modele) {
+    override fun se_deplacer() {
+        print("$marque ")
+        super.se_deplacer()
+        println(" Volé.")
+    }
+}
+
+class Voiture1 (marque: String, modele: Int, annee: Int, nbrRoues: Int) : Vehicule (marque = marque, modele = modele) {
+    override fun se_deplacer() {
+        print("$marque ")
+        super.se_deplacer()
+        println(" Roulé.")
+    }
+}
+
+class Velo1 (marque: String, modele: Int, nbrRoues: Int) : Vehicule (marque = marque, modele = modele) {
+    override fun se_deplacer() {
+        print("$marque ")
+        super.se_deplacer()
+        println(" Roulé.")
+    }
+}
 
 
 // -------------------------------
-
-
-
-
-
 
 
 fun main () {
@@ -159,7 +190,7 @@ fun main () {
     var maclasse = MaClass()
     maclasse.affiche()
 
-    println()
+    println()   // Exercise 1
 
     var personne = Personne("Chate", "Abderrafie", "Tanger", 20)
     personne.affiche()
@@ -179,7 +210,7 @@ fun main () {
     voiture.setKilometrage(44000)
     voiture.affiche()
 
-    println()
+    println()  // Exercise 2
 
     var maison = Maison("Boulvard", 1, "Blanch", 100)
     maison.affiche()
@@ -189,7 +220,7 @@ fun main () {
     maison.setSurface(300)
     maison.affiche()
 
-    println()
+    println()  // Exercise 3
 
     var forme = Forme("Forme")
     forme.afficher_details()
@@ -197,5 +228,50 @@ fun main () {
     rectangle.afficher_details()
     var cercle = Cercle("Cercle", 9.0)
     cercle.afficher_details()
+
+    println()  // Exercise 4
+
+    var avion1 = Avion1("Boieng", 2018, 4, 7)
+    avion1.afficher_details()
+    avion1.se_deplacer()
+    println()
+    var voiture1 = Voiture1("Dacia", 2020, 2025, 4)
+    voiture1.afficher_details()
+    voiture1.se_deplacer()
+    println()
+    var velo = Velo1("Decathelon", 2025, 2)
+    velo.afficher_details()
+    velo.se_deplacer()
+    println()
+    var avions = listOf(
+        Avion1("Boeing VC-25", 2001, 5, 7),
+        Avion1("F-16", 2022, 5, 4),
+        Avion1("F-35", 2024, 6, 3)
+    )
+    var voitures = listOf(
+        Voiture1("Volswagen Golf 7.5 R", 2018, 2025, 4),
+        Voiture1("Opel Corsa", 2023, 2025, 4),
+        Voiture1("Mercedes Class A", 2015, 2024, 4)
+    )
+    var velos = listOf(
+        Velo1("Decathelon S-1", 2020, 2024),
+        Velo1("Sania", 2021, 2),
+        Velo1("Honda N-Max", 2025, 2)
+    )
+    for (e in avions) {
+        println(e.afficher_details())
+        println(e.se_deplacer())
+        println()
+    }
+    for (e in voitures) {
+        println(e.afficher_details())
+        println(e.se_deplacer())
+        println()
+    }
+    for (e in velos) {
+        println(e.afficher_details())
+        println(e.se_deplacer())
+        println()
+    }
 
 }
