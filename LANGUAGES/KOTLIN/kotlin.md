@@ -36,8 +36,14 @@
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/7805bc78-513a-4e99-b18b-ebb202adb11b" />
 
+# Practice N-008 (TP 4 - OOP)
+### Questions
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/6e70dd89-b45f-4b29-b96f-ef23a859394b" /><br>
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/c034f0a2-eae1-42e7-9b39-b21deecb04c3" />
 
-# Practice N-007 (TP 5 - OOP)
+
+
+# Practice N-009 (TP 5 - OOP)
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/70826fd5-eaae-4c86-94b2-262cddd78c54" /><br>
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/681ea43d-9781-4abe-83a5-89fdd9e5b311" /><br>
