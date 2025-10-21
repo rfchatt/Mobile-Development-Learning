@@ -44,24 +44,27 @@ fun main () {
 
     println()
     var t1 = Telephone("Samsung", true, "0607078589")
-    println("La marque: ${t1.marque},le type: ${t1.typeAppareil}, Allumé (true/false): ${t1.allume}, numero de téléphone: ${t1.numeroDeTelephone}")
+    appareils.add(t1)
+    println("La marque: ${t1.marque},le type: ${t1.typeAppareil}, Allumé : ${t1.allume}, numero de téléphone: ${t1.numeroDeTelephone}")
     t1.allumer()
 
     println()
     var t2 = Telephone("Iphone", false, "0606060606")
-    println("La marque: ${t2.marque},le type: ${t2.typeAppareil}, Allumé (true/false): ${t2.allume}, numero de téléphone: ${t2.numeroDeTelephone}")
-    t2.allumer()
+    appareils.add(t2)
+    println("La marque: ${t2.marque},le type: ${t2.typeAppareil}, Allumé : ${t2.allume}, numero de téléphone: ${t2.numeroDeTelephone}")
 
     println()
     var o1 = Ordinateur("hp", true, "Windows")
-    println("La marque: ${o1.marque},le type: ${o1.typeAppareil}, Allumé (true/false): ${o1.allume}, Systeme d'Exploitation: ${o1.systemDexploitation}")
+    appareils.add(o1)
+    println("La marque: ${o1.marque},le type: ${o1.typeAppareil}, Allumé : ${o1.allume}, Systeme d'Exploitation: ${o1.systemDexploitation}")
     o1.allumer()
 
     println()
     var o2 = Ordinateur("Macbook", false, "macOs")
-    println("La marque: ${o2.marque},le type: ${o2.typeAppareil}, Allumé (true/false): ${o2.allume}, Systeme d'Exploitation: ${o2.systemDexploitation}")
-    o2.allumer()
+    appareils.add(o2)
+    println("La marque: ${o2.marque},le type: ${o2.typeAppareil}, Allumé : ${o2.allume}, Systeme d'Exploitation: ${o2.systemDexploitation}")
 
+    println()
     // comparaison des marques des téléphones
     var tel1 = t1.marque.lowercase()
     var tel2 = t2.marque.lowercase()
@@ -83,8 +86,11 @@ fun main () {
     o1.systemDexploitation = "Linux"
     println("le nouveau Systeme d'Exploitation : ${o1.systemDexploitation}")
 
+
+
     // compter appareils allumes
     var appareilAllume = appareils.count {it.allume}
+    println()
     println("Le nombre des Appareils allumés : $appareilAllume")
 
 }
