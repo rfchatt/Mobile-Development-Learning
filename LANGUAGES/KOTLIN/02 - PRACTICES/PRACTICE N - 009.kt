@@ -10,7 +10,7 @@ abstract class Appareil (var marque: String, var allume: Boolean = false) {
     }
 
     init {
-        println("L'appareil '$marque' créer avec succéss !")
+        println("L'appareil '$marque' créer avec succéss !") 
     }
 
 }
