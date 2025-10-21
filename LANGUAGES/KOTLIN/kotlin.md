@@ -36,3 +36,10 @@
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/7805bc78-513a-4e99-b18b-ebb202adb11b" />
 
+
+# Practice N-007 (TP 5 - OOP)
+### Questions
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/70826fd5-eaae-4c86-94b2-262cddd78c54" /><br>
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/681ea43d-9781-4abe-83a5-89fdd9e5b311" /><br>
+
+
