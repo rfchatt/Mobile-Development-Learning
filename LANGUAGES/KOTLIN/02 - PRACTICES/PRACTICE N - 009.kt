@@ -9,7 +9,7 @@ abstract class Forme (var couleur: String) {
 
 }
 
-// sous-class Cercle
+// sous-class Cercle 
 class Cercle (couleur: String, var rayon: Int) : Forme (couleur = couleur) {
 
     override fun afficherInfo() {
