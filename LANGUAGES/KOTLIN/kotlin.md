@@ -48,4 +48,7 @@
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/70826fd5-eaae-4c86-94b2-262cddd78c54" /><br>
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/681ea43d-9781-4abe-83a5-89fdd9e5b311" /><br>
 
+# Practice N-010 (TP 6 - OOP)
+### Questions
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/f9f6dc05-a9a5-4d62-845b-c87b84fca8e7" />
 
