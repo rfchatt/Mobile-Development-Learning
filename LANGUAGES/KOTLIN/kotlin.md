@@ -52,7 +52,7 @@
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/f9f6dc05-a9a5-4d62-845b-c87b84fca8e7" />
 
-# Practice N-010 (TP 5 - OOP)
+# Practice N-011 (TP 6 - OOP)
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/49bc5729-fa2e-45ec-8585-8379231c74c9" /><br>
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/854577c0-d8e6-4235-b964-1743b5c5769f" />
