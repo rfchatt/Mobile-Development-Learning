@@ -27,28 +27,33 @@
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/a6db95c9-534a-4991-8844-648d03758ba6" /><br>
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/2186888c-7a11-440a-97fd-3e75783399f7" />
 
-# Practice N-006 (TP 2 - OOP)
+# Practice N-006 (TP 1 - OOP)
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/2564551d-73f6-43ab-929c-fdb868beada5" /><br>
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/34f37ffd-cc37-47ac-af14-388912b7361d" />
 
-# Practice N-007 (TP 3 - OOP)
+# Practice N-007 (TP 2 - OOP)
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/7805bc78-513a-4e99-b18b-ebb202adb11b" />
 
-# Practice N-008 (TP 4 - OOP)
+# Practice N-008 (TP 3 - OOP)
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/6e70dd89-b45f-4b29-b96f-ef23a859394b" /><br>
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/c034f0a2-eae1-42e7-9b39-b21deecb04c3" />
 
 
 
-# Practice N-009 (TP 5 - OOP)
+# Practice N-009 (TP 4 - OOP)
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/70826fd5-eaae-4c86-94b2-262cddd78c54" /><br>
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/681ea43d-9781-4abe-83a5-89fdd9e5b311" /><br>
 
-# Practice N-010 (TP 6 - OOP)
+# Practice N-010 (TP 5 - OOP)
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/f9f6dc05-a9a5-4d62-845b-c87b84fca8e7" />
+
+# Practice N-010 (TP 5 - OOP)
+### Questions
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/49bc5729-fa2e-45ec-8585-8379231c74c9" /><br>
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/854577c0-d8e6-4235-b964-1743b5c5769f" />
 
