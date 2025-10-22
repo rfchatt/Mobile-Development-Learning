@@ -5,7 +5,7 @@ import kotlin.math.PI
 class MaClass {
 
     // 1)
-    var x: Int = 23;
+    var x: Int = 23;  
     var y: Int = x + 5;
 
     fun affiche () {
