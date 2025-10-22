@@ -6,7 +6,7 @@ fun main () {
 
     var num1: Double;
     var num2: Double;
-
+  
     fun ajouter (num1: Double, num2: Double) : Double {
         return num1 + num2;
     }
