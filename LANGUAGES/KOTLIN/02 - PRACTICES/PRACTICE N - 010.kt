@@ -63,12 +63,12 @@ interface Animal {
 class Dog (override var name: String) : Animal {
 
     override fun makeSound() {
-         println("The dog is barking !")
+        println("The dog barks !")
     }
 
 }
 
-class Cat (override var name: String ) : Animal {
+class Cat (override var name: String) : Animal {
 
     override fun makeSound() {
         println("The cat meows !")
@@ -77,11 +77,11 @@ class Cat (override var name: String ) : Animal {
 
 fun main () {
 
-    var d = Dog("Charlie")
+    var d = Dog("Doggy")
     d.makeSound()
 
     println()
-    var c = Cat("Noni")
+    var c = Cat("Catty")
     c.makeSound()
 
 }
@@ -93,14 +93,14 @@ package TP5_KOTLIN
 // Exercise 3
 
 // 1- interface Animal
-interface AnimaL {
+interface Animal1 {
 
     var nom: String
     fun parler ()
 
     // 2- méthode seDéplacer()
     fun seDeplacer () {
-        println("l'Animal $nom se déplacer")
+        print("$nom se déplacer")
     }
 
 }
@@ -113,14 +113,15 @@ interface Volant {
 }
 
 // 4- class Oiseau
-class Oiseau (override var nom: String) : AnimaL, Volant {
+class Oiseau (override var nom: String) : Animal1, Volant {
 
     override fun parler() {
-        println("l'oiseau chante !")
+        println("L'oiseau chante !")
     }
 
     override fun seDeplacer() {
         super.seDeplacer()
+        println()
     }
 
     override fun voler() {
@@ -130,27 +131,29 @@ class Oiseau (override var nom: String) : AnimaL, Volant {
 }
 
 // 5- class Chien
-class Chien (override var nom: String) : AnimaL {
+class Chien (override var nom: String) : Animal1 {
 
     override fun parler() {
-         println("Le chien aboie !")
+        println("Le chien aboie !")
     }
 
     override fun seDeplacer() {
-        println("Le chien se déplacer")
+        super.seDeplacer()
+        println()
     }
 
 }
 
 // class Poisson
-class Poisson (override var nom: String) : AnimaL {
+class Poisson (override var nom: String) : Animal1 {
 
     override fun seDeplacer() {
-         super.seDeplacer()
+        super.seDeplacer()
+        println(" par la nage")
     }
 
     override fun parler() {
-
+        println("Le poisson ne fait pas de bruit !")
     }
 
 }
