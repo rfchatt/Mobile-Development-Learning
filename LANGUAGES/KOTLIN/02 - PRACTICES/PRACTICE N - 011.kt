@@ -50,6 +50,10 @@ class Professeur (
     override var numeroIdentification: String,
     var heuresCours: Int) : PersonneUniveritaire (nom, prenom, dateEmbauche), Enseignant {
 
+    init {
+        require(heuresCours < 0) { "les heures de cours doit etre positif !" }
+    }
+
     override fun calculerSalaire () : Double {
         return 3000.0 + 50 * heuresCours
     }
@@ -74,6 +78,10 @@ class Chercheur (
     override var numeroIdentification: String,
     ) : PersonneUniveritaire (nom, prenom, dateEmbauche), Enseignant {
 
+    init {
+        require(nombrePublication < 0) { "Le nombre de publication doit etre positif !" }
+    }
+
     override fun calculerSalaire () : Double {
         return 2500.0 + 100 * nombrePublication
     }
@@ -93,6 +101,10 @@ class Administratif (
     var poste: String,
     override var numeroIdentification: String,
     var heuresSupplementaires: Int) : PersonneUniveritaire (nom, prenom, dateEmbauche) {
+    
+    init {
+        require(heuresSupplementaires < 0) { "Les heures supplementaires doit etre positif !" }
+    }
 
     override fun calculerSalaire(): Double {
         return 2000.0 + 20 * heuresSupplementaires
@@ -158,6 +170,8 @@ fun main () {
     println("Le nombre des Administrateurs : $nbrAdministrateurs")
 
 }
+
+
 
 
 
