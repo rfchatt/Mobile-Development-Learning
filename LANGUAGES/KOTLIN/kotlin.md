@@ -57,3 +57,9 @@
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/49bc5729-fa2e-45ec-8585-8379231c74c9" /><br>
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/854577c0-d8e6-4235-b964-1743b5c5769f" />
 
+# Practice N-011 (TP 6 - OOP Global v-1)
+### Questions
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/576b56e1-8a0e-426c-88db-78e6fb5f4f31" /><br>
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/ee8762fe-cb8f-4990-9845-2a6ef7bf03cf" />
+
+
