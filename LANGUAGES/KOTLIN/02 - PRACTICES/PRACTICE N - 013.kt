@@ -20,7 +20,7 @@ open class Film (var titre: String, var duree: Int, nom: String, description: St
 // 3- Interface Affichable
 interface Affichable {
 
-    fun AfficherDetails ()
+    fun AfficherDetails () {}
 
 }
 
@@ -91,6 +91,25 @@ class Seance (var horaire: String, var salle: Int, var film: Film) {
 
 }
 
-// 10- Programme Principal : 
+// 10- Programme Principal :
 
-// A Suivre ... inshaAllah !
+fun main () {
+
+    var spectateur1 = Spectateur("Abdo", 20, "chattabdrrafie@gmail.com")
+    var spectateur2 = Spectateur("Joe", 36, "joe.admin@outlook.com")
+    var spectateur3 = Spectateur("Mohamed", 25, "moh.mohamed@icloud.com")
+
+    var film1 = Film("Action", 2, "Moroccan Dream", "moroccan film")
+    var film2 = Film("Science", 3, "Hidrogyne X", "romantic film")
+    var film3 = Film("Drame", 2, "Resident Evil 4", "film inspired from a video game")
+
+    var billet1 = BilletVIP("7")
+    var billet2 = BilletVIP("25")
+
+    film1.ajouterSpectateur(spectateur1)
+    film2.ajouterSpectateur(spectateur3)
+    film3.ajouterSpectateur(spectateur2)
+
+    // ...
+
+}
