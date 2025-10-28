@@ -48,9 +48,46 @@ fun gererOperation (operation: OperationResult) {
 
 }
 
+// Exercise 3 --
+
+data class User (var id: Int, var name: String, var email: String)
+
+fun filtrerDomains (users: List<User>, domaine: String) {
+    var usersFiltres = users.filter { it.email.endsWith(domaine) }
+
+    for (user in usersFiltres) {
+        println("Les utlisateurs de domaine : '${domaine}'")
+        println("${user.name} qu'a l'ID [${user.id}] á le domaine d'émail : ${user.email}")
+    }
+}
+
+// Exercise 4 --
+
+data class Product (var name: String, var price: Double, var quantity: Int)
+
+fun calculerPrixTotal (produits: List<Product>): Double {
+    return produits.sumOf { it.price * it.quantity }
+}
+
+fun AfficherDetails (produit: Product) {
+    println("=== Les détails d produit : ===")
+    println("Le Nom : ${produit.name}")
+    println("Le Prix : ${produit.price}")
+    println("La Quantité : ${produit.quantity}")
+}
+
+// Exercise 5 --
+
+//  ...
+
+
+
+
 // --- Programme Principal ---
 
 fun main () {
+
+    // Ex 1
 
     var cashP = Payment.CashPayment(200)
     typePayment(cashP)
@@ -61,7 +98,9 @@ fun main () {
     var digitP = Payment.DigitalPayment(399)
     typePayment(digitP)
 
-    // -- - ---
+    // --- - ---
+
+    // Ex 2
 
     var opS = OperationResult.Success(100.0, "Operation finished")
     gererOperation(opS)
@@ -71,6 +110,15 @@ fun main () {
     var opL = OperationResult.Loading(55.0, "Operation loading")
     gererOperation(opL)
 
-}
+    // --- - ---
 
-//  A suivre InshaAllah
+    // Ex 3
+
+    var users = listOf<User>(
+        User(1, "Abderrafie", "chattabdrrafie@gmail.com"),
+        User(3, "Chate", "chate@outlook.com"),
+        User(5, "Barae", "barae.chatt@icloud.com")
+    )
+
+    filtrerDomains(users, "@gmail.com")
+}
