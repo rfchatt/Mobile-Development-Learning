@@ -61,19 +61,22 @@ fun filtrerDomains (users: List<User>, domaine: String) {
     }
 }
 
-// Exercise 4 --
+// Exercise 4
 
-data class Product (var name: String, var price: Double, var quantity: Int)
+data class Product (var name: String, var price: Double, var quantity: Int) {
 
-fun calculerPrixTotal (produits: List<Product>): Double {
-    return produits.sumOf { it.price * it.quantity }
-}
+    fun calculerPrixTotal () : Double {
+        return price * quantity
+    }
 
-fun AfficherDetails (produit: Product) {
-    println("=== Les détails d produit : ===")
-    println("Le Nom : ${produit.name}")
-    println("Le Prix : ${produit.price}")
-    println("La Quantité : ${produit.quantity}")
+    fun AfficherDetails () {
+        println("-- Détails des Produits --")
+        println("Le nom : $name")
+        println("Le prix : $price DH")
+        println("La quantité : $quantity piece")
+        println("Le prix Total : ${calculerPrixTotal()} DH")
+        println()
+    }
 }
 
 // Exercise 5 --
@@ -87,7 +90,7 @@ fun AfficherDetails (produit: Product) {
 
 fun main () {
 
-    // Ex 1
+    // Ex 1 --
 
     var cashP = Payment.CashPayment(200)
     typePayment(cashP)
@@ -100,7 +103,7 @@ fun main () {
 
     // --- - ---
 
-    // Ex 2
+    // Ex 2 --
 
     var opS = OperationResult.Success(100.0, "Operation finished")
     gererOperation(opS)
@@ -112,7 +115,7 @@ fun main () {
 
     // --- - ---
 
-    // Ex 3
+    // Ex 3 --
 
     var users = listOf<User>(
         User(1, "Abderrafie", "chattabdrrafie@gmail.com"),
@@ -121,4 +124,19 @@ fun main () {
     )
 
     filtrerDomains(users, "@gmail.com")
+
+
+    // Ex 4 --
+
+    var product1 = Product("Milk", 4.0, 10)
+    product1.calculerPrixTotal()
+    product1.AfficherDetails()
+
+    var product2 = Product("chocolat", 10.0, 23)
+    product2.calculerPrixTotal()
+    product2.AfficherDetails()
+
+
+
+    
 }
