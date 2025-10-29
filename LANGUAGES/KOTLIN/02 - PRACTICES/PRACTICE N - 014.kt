@@ -97,6 +97,23 @@ class Box (var size: Double) {
 
 // Exercise 6 --
 
+class Library (var libraryName: String) {
+
+    inner class Book (var title: String, var author: String) {
+
+        fun AfficherDetails () {
+            println("--- les Détails ---")
+            println("Bibliothéque >> ")
+            println("Le Nom : $libraryName")
+            println("Livre >> ")
+            println("Le Titre : $title")
+            println("L'Auteur : $author")
+        }
+
+    }
+
+}
+
 // ...
 
 
@@ -155,6 +172,12 @@ fun main () {
     var box = Box(75.5)
     var item = box.Item("Carre")
     item.AfficherDetails()
+
+    // Ex 6 --
+
+    var library = Library("Library Istanbul")
+    var book = library.Book("and we have a meeting in Halal", "Ahmed Atta")
+    book.AfficherDetails()
 
     
 }
