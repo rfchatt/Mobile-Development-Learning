@@ -114,7 +114,45 @@ class Library (var libraryName: String) {
 
 }
 
-// ...
+// Exercise 7 --
+
+enum class OrderStatus (var description: String) {
+
+    PENDING("Pending Order !"),
+    SHIPPED("Shipped Order !"),
+    DELIVERED("Delivered Order !"),
+    CANCELLED("Canceled Order !")
+
+}
+
+class Order (var status: OrderStatus) {
+
+    fun changerStatus (nouveauStatus: OrderStatus) {
+
+        when (status) {
+
+            OrderStatus.PENDING -> {
+                if (nouveauStatus == OrderStatus.CANCELLED || nouveauStatus == OrderStatus.SHIPPED) {
+                    println("Status de l'order changé de $status a $nouveauStatus")
+                }
+            }
+            OrderStatus.SHIPPED -> {
+                if (nouveauStatus == OrderStatus.DELIVERED) {
+                    println("Status de l'order changé de $status a $nouveauStatus")
+                }
+            }
+            OrderStatus.DELIVERED, OrderStatus.CANCELLED -> {
+                println("Impossible de modifier le Status $status")
+            }
+
+        }
+
+    }
+
+}
+
+
+
 
 
 // --- Programme Principal ---
@@ -179,5 +217,15 @@ fun main () {
     var book = library.Book("and we have a meeting in Halal", "Ahmed Atta")
     book.AfficherDetails()
 
+    // Ex 7 --
+
+    var order1 = Order(OrderStatus.PENDING)
+    order1.changerStatus(OrderStatus.SHIPPED)
+
+    var order2 = Order(OrderStatus.DELIVERED)
+    order2.changerStatus(OrderStatus.CANCELLED)
+
     
 }
+
+
