@@ -1,4 +1,4 @@
-package TP6_KT_GLOBAL_2
+package TP6_KOTLIN_GB_2
 
 import kotlin.collections.List
 
@@ -6,13 +6,21 @@ import kotlin.collections.List
 class Spectateur (var nom: String, var age: Int, var email: String)
 
 // 2- Class Film
-open class Film (var titre: String, var duree: Int, nom: String, description: String) : Genre (nom, description) {
+open class Film (var titre: String, var duree: Int, nom: String, description: String) : Genre (nom, description), Affichable {
 
     var spectateurs = mutableListOf<Spectateur>()
     var listeEvaluations = mutableListOf<Double>()
 
     fun ajouterSpectateur (spectateur: Spectateur) {
         spectateurs.add(spectateur)
+    }
+
+    override fun AfficherDetails() {
+        println("Les Détails de Film '$nom'")
+        println("le titre : $titre")
+        println("la durée : $duree H")
+        println("le description : $description")
+        println()
     }
 
 }
@@ -30,7 +38,7 @@ abstract class FilmAction (titre: String, duree: Int, var niveauViolance: Int, n
     override fun AfficherDetails() {
         println("Les Details de film d'Action :")
         println("Le Titre : $titre")
-        println("La Duree : $duree")
+        println("La Duree : $duree H")
         println("Le niveau de Violance : $niveauViolance")
         println()
     }
@@ -95,21 +103,36 @@ class Seance (var horaire: String, var salle: Int, var film: Film) {
 
 fun main () {
 
+    // * 1
     var spectateur1 = Spectateur("Abdo", 20, "chattabdrrafie@gmail.com")
     var spectateur2 = Spectateur("Joe", 36, "joe.admin@outlook.com")
     var spectateur3 = Spectateur("Mohamed", 25, "moh.mohamed@icloud.com")
 
+    // * 2 - 3
     var film1 = Film("Action", 2, "Moroccan Dream", "moroccan film")
     var film2 = Film("Science", 3, "Hidrogyne X", "romantic film")
     var film3 = Film("Drame", 2, "Resident Evil 4", "film inspired from a video game")
 
+    // * 4
     var billet1 = BilletVIP("7")
     var billet2 = BilletVIP("25")
 
+    // * 5
     film1.ajouterSpectateur(spectateur1)
     film2.ajouterSpectateur(spectateur3)
     film3.ajouterSpectateur(spectateur2)
 
+    // * 6
+    var films = mutableListOf<Film>()
+    films.add(film1)
+    films.add(film2)
+    films.add(film3)
+    for (film in films) {
+        film.AfficherDetails()
+    }
+
     // ...
+    
+
 
 }
