@@ -151,6 +151,37 @@ class Order (var status: OrderStatus) {
 
 }
 
+// Exercise 8 --
+
+enum class DayOfWeek () {
+
+    LUNDI, MARDI, MERCREDI, JEUDI, VENDREDI, SAMEDI, DIMANCHE
+
+}
+
+fun describeDay (day: DayOfWeek) {
+
+    when (day) {
+
+        DayOfWeek.LUNDI -> {
+            println("c'est le début de la semaine !")
+        }
+        DayOfWeek.MARDI -> {
+            println("c'est le 2eme jour de la semaine !")
+        }
+        DayOfWeek.MERCREDI, DayOfWeek.JEUDI -> {
+            println("c'est le milieu de la semaine !")
+        }
+        DayOfWeek.VENDREDI -> {
+            println("c'est presque le week-end !")
+        }
+        DayOfWeek.SAMEDI, DayOfWeek.DIMANCHE -> {
+            println("c'est le week-end !")
+        }
+
+    }
+
+}
 
 
 
@@ -224,6 +255,16 @@ fun main () {
 
     var order2 = Order(OrderStatus.DELIVERED)
     order2.changerStatus(OrderStatus.CANCELLED)
+
+    // Ex 8 --
+
+    var day1 = describeDay(DayOfWeek.LUNDI)
+    var day2 = describeDay(DayOfWeek.MARDI)
+    var day3 = describeDay(DayOfWeek.MERCREDI)
+    var day4 = describeDay(DayOfWeek.JEUDI)
+    var day5 = describeDay(DayOfWeek.VENDREDI)
+    var day6 = describeDay(DayOfWeek.SAMEDI)
+    var day7 = describeDay(DayOfWeek.DIMANCHE)
 
     
 }
