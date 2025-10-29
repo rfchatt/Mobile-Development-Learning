@@ -3,7 +3,7 @@ package TP7_KOTLIN
 import jdk.dynalink.Operation
 
 // TP 7 - KOTLIN
-
+ 
 // Exercise 1 --
 
 sealed class Payment {
