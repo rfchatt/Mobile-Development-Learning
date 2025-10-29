@@ -81,9 +81,23 @@ data class Product (var name: String, var price: Double, var quantity: Int) {
 
 // Exercise 5 --
 
-//  ...
+class Box (var size: Double) {
 
+    inner class Item (var name: String) {
 
+        fun AfficherDetails () {
+            println("Les détails de Box et d'Item : ")
+            println("Le size de Box : $size cm")
+            println("Le nom d'Item :  $name")
+        }
+
+    }
+
+}
+
+// Exercise 6 --
+
+// ...
 
 
 // --- Programme Principal ---
@@ -136,7 +150,11 @@ fun main () {
     product2.calculerPrixTotal()
     product2.AfficherDetails()
 
+    // Ex 5 --
 
+    var box = Box(75.5)
+    var item = box.Item("Carre")
+    item.AfficherDetails()
 
     
 }
