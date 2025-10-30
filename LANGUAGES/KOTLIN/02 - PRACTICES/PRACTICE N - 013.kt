@@ -131,8 +131,20 @@ fun main () {
         film.AfficherDetails()
     }
 
-    // ...
-    
+    // * 7
+    var evaluations = mutableListOf<Double>()
+    var evaluation1 = Evaluation(20, "Tres Bon")
+    var evaluation2 = Evaluation(15, "Bon")
 
+    evaluation1.ajouterEvaluation(evaluations, 20)
+    println("l'évaluation '${evaluation1.note }, ${evaluation1.commentaire}' ajouté avec success")
+
+    evaluation2.ajouterEvaluation(evaluations, 15)
+    println("l'évaluation '${evaluation2.note }, ${evaluation2.commentaire}' ajouté avec success")
+
+    var moyenne = evaluation1.calculerMoyenne(evaluations)
+    println("Le Moyenne des notes : $moyenne")
+
+    // ...
 
 }
