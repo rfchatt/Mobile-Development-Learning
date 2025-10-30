@@ -4,7 +4,7 @@ import jdk.dynalink.Operation
 
 // TP 7 - KOTLIN 
  
-// Exercise 1 --
+// Exercise 1 -- 
 
 sealed class Payment {
 
