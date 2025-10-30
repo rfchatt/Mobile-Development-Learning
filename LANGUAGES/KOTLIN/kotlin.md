@@ -57,9 +57,21 @@
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/49bc5729-fa2e-45ec-8585-8379231c74c9" /><br>
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/854577c0-d8e6-4235-b964-1743b5c5769f" />
 
-# Practice N-011 (TP 6 - OOP Global v-1)
+# Practice N-012 (TP 6 - OOP Global v-1)
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/576b56e1-8a0e-426c-88db-78e6fb5f4f31" /><br>
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/ee8762fe-cb8f-4990-9845-2a6ef7bf03cf" />
+
+# Practice N-013 (TP 6 - OOP Global v-2)
+### Questions
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/0692edfb-09ff-4976-8c0c-175177372d71" /><br>
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/2d2c31af-965a-4edf-8971-069d7632aa12" />
+
+# Practice N-014 (TP 7 - OOP)
+### Questions
+#### enum Class, sealed class & data class
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/5158f62f-1748-4fc6-be8f-a8493ebfb1bd" /><br>
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/05d7f482-c54e-418f-a5cd-ab5d72473705" />
+
 
 
