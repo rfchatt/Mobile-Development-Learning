@@ -258,13 +258,17 @@ fun main () {
 
     // Ex 8 --
 
-    var day1 = describeDay(DayOfWeek.LUNDI)
-    var day2 = describeDay(DayOfWeek.MARDI)
-    var day3 = describeDay(DayOfWeek.MERCREDI)
-    var day4 = describeDay(DayOfWeek.JEUDI)
-    var day5 = describeDay(DayOfWeek.VENDREDI)
-    var day6 = describeDay(DayOfWeek.SAMEDI)
-    var day7 = describeDay(DayOfWeek.DIMANCHE)
+    var day1 = describeDay(DayOfWeek.LUNDI)  // c'est le début de la semaine !
+    println(day1.hashCode())    // 1283928880
+
+    var day2 = describeDay(DayOfWeek.MARDI)  // c'est le 2eme jour de la semaine !
+    println(day2.equals(day1))  // true
+
+    var day3 = describeDay(DayOfWeek.MERCREDI)  // c'est le milieu de la semaine !
+    var day4 = describeDay(DayOfWeek.JEUDI)  // c'est le milieu de la semaine !
+    var day5 = describeDay(DayOfWeek.VENDREDI)  // c'est le milieu de la semaine !
+    var day6 = describeDay(DayOfWeek.SAMEDI) // c'est le week-end !
+    var day7 = describeDay(DayOfWeek.DIMANCHE)  // c'est le week-end !
 
     
 }
