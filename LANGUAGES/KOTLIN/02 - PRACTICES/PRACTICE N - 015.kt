@@ -2,9 +2,9 @@
 
 // -----------------------------------------------------------------------------------
 
-// Exercice 1
-
 package TP8_KOTLIN
+
+// Exercice 1
 
 sealed class Vehicule {
 
@@ -230,6 +230,54 @@ fun main () {
 //Le nom : Abderrafie
 //Le Salaire : 7000.0 DH
 //Le salaire aprés +10.0% : 7700.0 DH
+
+
+// -----------------------------------------------------------------------------------
+
+package TP8_KOTLIN
+
+// Exercice 5
+
+class House (var adress: String) {
+
+    // 1. ---
+    inner class Room (var name: String, var area: String) {
+
+        // 2. ---
+        fun printDetails () {
+
+            println("L'adress de la maison : ${adress}")
+            println("Le nom de piece : $name")
+            println("L'erea de piece : $area")
+            println()
+
+        }
+
+    }
+
+}
+
+fun main () {
+
+    var house = House("Gzennaia")
+    var room1 = house.Room("Salle a manger", "rez-de-chaussée")
+    var room2 = house.Room("Sallon", "1er Etage")
+
+    room1.printDetails()
+    room2.printDetails()
+
+}
+
+// Terminal
+
+
+//L'adress de la maison : Gzennaia
+//Le nom de piece : Salle a manger
+//L'erea de piece : rez-de-chaussée
+
+//L'adress de la maison : Gzennaia
+//Le nom de piece : Sallon
+//L'erea de piece : 1er Etage
 
 
 // -----------------------------------------------------------------------------------
