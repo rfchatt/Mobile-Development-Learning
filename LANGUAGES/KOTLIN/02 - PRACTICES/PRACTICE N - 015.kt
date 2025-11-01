@@ -282,3 +282,52 @@ fun main () {
 
 // -----------------------------------------------------------------------------------
 
+package TP8_KOTLIN
+
+// Exrcice 6
+
+class Library (var libraryName: String) {
+
+    inner class Book (var title: String, var author: String) {
+
+        fun displayBookInfo () {
+            println("Bibliotheque ")
+            println("Le nom : $libraryName")
+            println("Le Livre ")
+            println("Le titre : $title")
+            println("L'Auteur : $author")
+            println()
+        }
+
+    }
+
+}
+
+fun main () {
+
+    var library = Library("Library Al Aqsa")
+    var book1 = library.Book("and we have a meeting in Halal", "Ahmad Atta")
+    var book2 = library.Book("don't be sad", "al Qarnee")
+
+    book1.displayBookInfo()
+    book2.displayBookInfo()
+
+}
+
+// Terminal 
+
+
+//Bibliotheque
+//Le nom : Library Al Aqsa
+//Le Livre
+//Le titre : and we have a meeting in Halal
+//L'Auteur : Ahmad Atta
+
+//Bibliotheque
+//Le nom : Library Al Aqsa
+//Le Livre
+//Le titre : don't be sad
+//L'Auteur : al Qarnee
+
+
+// -----------------------------------------------------------------------------------
