@@ -385,3 +385,63 @@ fun main () {
 
 
 // -----------------------------------------------------------------------------------
+
+package TP8_KOTLIN
+
+// Exercice 8
+
+enum class Month () {
+
+    JANVIER, FEVRIER, MARS, AVRIL, MAI, JUIN, JUILLET,
+    AOUT, SEPTEMBRE, OCTOBRE, NOVEMBRE, DECEMBRE;
+
+}
+
+// 1. ---
+fun getSeason (month: Month) {
+
+    when (month) {
+        Month.JANVIER, Month.FEVRIER, Month.MARS -> {
+            println("HIVER ! temps du froid et des chocolats chauds.")
+        }
+        Month.AVRIL, Month.MAI, Month.JUIN -> {
+            println("PRINTEMPS ! retour des fleurs et des beaux jours.")
+        }
+        Month.JUILLET, Month.AOUT, Month.SEPTEMBRE -> {
+            println("ÉTÉ ! période des vacances et du soleil.")
+        }
+        Month.OCTOBRE, Month.NOVEMBRE, Month.DECEMBRE -> {
+            println("AUTOMNE ! saison des couleurs et du calme.")
+        }
+    }
+
+}
+
+// 2. ---
+fun main () {
+
+    // 3. ---
+    var mois1 = Month.JANVIER
+    getSeason(mois1)
+
+    var mois2 = Month.AVRIL
+    getSeason(mois2)
+
+    var mois3 = Month.JUILLET
+    getSeason(mois3)
+
+    var mois4 = Month.OCTOBRE
+    getSeason(mois4)
+
+}
+
+// Terminal
+
+//HIVER ! temps du froid et des chocolats chauds.
+//PRINTEMPS ! retour des fleurs et des beaux jours.
+//ÉTÉ ! période des vacances et du soleil.
+//AUTOMNE ! saison des couleurs et du calme.
+
+
+
+// Thanks for reading my code ;)
