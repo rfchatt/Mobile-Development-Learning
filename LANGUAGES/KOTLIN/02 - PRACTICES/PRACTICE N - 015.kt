@@ -331,3 +331,57 @@ fun main () {
 
 
 // -----------------------------------------------------------------------------------
+
+package TP8_KOTLIN
+
+// Exercice 7
+
+enum class OrderStatus {
+
+    PENDING, IN_PROGRESS, DELIVERED, CANCELLED
+
+}
+
+// 1. ---
+class Order (var orderId: Int, var status: OrderStatus) {
+
+    // 2. ---
+    fun updateStatus (statusUpdated: OrderStatus) {
+
+        when (status) {
+            OrderStatus.PENDING -> {
+                if (statusUpdated == OrderStatus.CANCELLED || statusUpdated == OrderStatus.IN_PROGRESS)
+                    println("le status de l'ordre change de '${status}' a '${statusUpdated}'")
+            }
+            OrderStatus.IN_PROGRESS -> {
+                if (statusUpdated == OrderStatus.DELIVERED) {
+                    println("le statut de l'ordre change de '${status}' a '${statusUpdated}'")
+                }
+            }
+            OrderStatus.DELIVERED, OrderStatus.CANCELLED -> {
+                println("Impossible de changer le statut de l'ordre !")
+            }
+        }
+
+    }
+
+}
+
+//3. ---
+fun main () {
+
+    var order1 = Order(1, OrderStatus.PENDING)
+    order1.updateStatus(OrderStatus.IN_PROGRESS)
+
+    var order2 = Order(1, OrderStatus.DELIVERED)
+    order2.updateStatus(OrderStatus.IN_PROGRESS)
+
+}
+
+// Terminal
+
+//le status de l'ordre change de 'PENDING' a 'IN_PROGRESS'
+//Impossible de changer le statut de l'ordre !
+
+
+// -----------------------------------------------------------------------------------
