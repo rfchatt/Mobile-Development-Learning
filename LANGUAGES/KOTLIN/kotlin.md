@@ -73,5 +73,9 @@
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/5158f62f-1748-4fc6-be8f-a8493ebfb1bd" /><br>
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/05d7f482-c54e-418f-a5cd-ab5d72473705" />
 
-
+# Practice N-015 (TP 8 - OOP)
+### Questions
+#### enum Class, sealed class, data class & nested class (inner class)
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/9938be8c-89a7-4c7a-ae61-1a39b5f6d937" /><br>
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/27990651-9f4d-4513-a1cb-309c8f924930" />
 
