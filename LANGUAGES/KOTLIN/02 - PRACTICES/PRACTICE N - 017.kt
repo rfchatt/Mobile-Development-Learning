@@ -167,3 +167,47 @@ fun main () {
     executeur.shutdown() // 5050
 
 }
+
+
+// --------------------------------------------------------------
+
+
+package TP10_KOTLIN
+
+import kotlin.concurrent.thread
+
+// Exercice 5 :
+
+fun main () {
+
+    var counter: Int = 0
+    var lock = Object()
+
+    var thread1 = thread {
+        for (i in 1..1000) {
+            synchronized(lock) {
+                counter++
+            }
+        }
+        println("Compteur 1 Terminé !")
+
+    }
+
+    var thread2 = thread {
+
+        for (i in 1..1000) {
+            synchronized(lock) {
+                counter--
+            }
+        }
+        println("Compteur 2 Terminé !")
+
+    }
+
+    thread1.join()
+    thread2.join()
+
+    println(" Compteur final : $counter")
+
+
+}
