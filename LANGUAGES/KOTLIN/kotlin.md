@@ -83,7 +83,12 @@
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/0767c4e4-3b4e-465e-a013-98110524dc71" /><br>
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/900fe276-a884-4670-98a3-43a3fe36fd4b" />
-
+ 
+# Practice N-017 (TP 10) 
+### Questions
+### Threads
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/aa720520-3b44-49a6-b348-296cc090507d" /><br>
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/b953f4f1-85df-4275-bbd2-4fa528e20003" />
 
 
 
