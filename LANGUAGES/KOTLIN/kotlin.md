@@ -79,3 +79,11 @@
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/9938be8c-89a7-4c7a-ae61-1a39b5f6d937" /><br>
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/27990651-9f4d-4513-a1cb-309c8f924930" />
 
+# Practice N-016 (TP 9)
+### Questions
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/0767c4e4-3b4e-465e-a013-98110524dc71" /><br>
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/900fe276-a884-4670-98a3-43a3fe36fd4b" />
+
+
+
+
