@@ -124,4 +124,46 @@ fun main () {
     thread3.interrupt()
     println("thread 3 Arreté !")
 
+} 
+
+
+// --------------------------------------------------------------
+
+
+package TP10_KOTLIN
+
+import java.util.concurrent.Callable
+import java.util.concurrent.Executors
+
+// Exercice 4 :
+
+// to use Thread avec retour de vlaeur j'utilise 'Callable'.
+//     - var executeur = Executors.newSingleThreadExecutor().
+//     - var future = executeur.submit(threadRetourn).
+//       ... 
+//     - var resultat = future.get()
+
+
+
+fun main () {
+
+    var threadRetourn = Callable<Int> {
+
+        Thread.sleep(3000)
+        var somme = 0;
+        for (i in 1..100) {
+            somme += i
+        }
+        somme
+
+    }
+
+    var executeur = Executors.newSingleThreadExecutor()
+    var future = executeur.submit(threadRetourn)
+
+    println("Calcule en cours ...")
+    var resultat = future.get()
+    println("La somme : " + resultat)
+    executeur.shutdown() // 5050
+
 }
