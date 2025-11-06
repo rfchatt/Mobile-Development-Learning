@@ -85,4 +85,32 @@ fun main () {
 // ------------------------------------------------------------------------
 
 // Exercice 4 : Test pair/impair
-...
+
+fun main () {
+
+    var pairCheck = { n: Int -> n % 2 == 0}
+
+    var nombres = mutableListOf<Int>(1, 22, 3, 76, 9, 32, 23)
+
+    for (n in nombres) {
+        if (pairCheck(n)) { println("Le nombre : $n, est Pair 👍") }
+        else { println("Le nombre : $n, est imPair !") }
+    }
+
+}
+
+
+// Run :
+
+// Le nombre : 1, est imPair !
+// Le nombre : 22, est Pair 👍
+// Le nombre : 3, est imPair !
+// Le nombre : 76, est Pair 👍
+// Le nombre : 9, est imPair !
+// Le nombre : 32, est Pair 👍
+// Le nombre : 23, est imPair !
+
+
+// ------------------------------------------------------------------------
+
+
