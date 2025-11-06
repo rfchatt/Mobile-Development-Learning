@@ -185,3 +185,31 @@ fun main () {
 
 // ------------------------------------------------------------------------
 
+
+// Exercice 8 : Vérification conditionnelle
+
+fun main () {
+
+    var nombres = List<Int>(10) { (1..90).random() }
+    println("La liste des nombres : $nombres")
+
+    var supperieur = { n: Int -> n > 50 }
+
+    var unSupperieur = nombres.any(supperieur)
+    var toutSupperieur = nombres.all(supperieur)
+
+    println("Un nombre moins un nombre est supperieur a 50 ? : $unSupperieur")
+    println("Tout les nombres sont supperieurs a 50 ? : $toutSupperieur")
+
+}
+
+// Run :
+
+// La liste des nombres : [74, 1, 64, 79, 13, 42, 47, 32, 47, 76]
+// Un nombre moins un nombre est supperieur a 50 ? : true
+// Tout les nombres sont supperieurs a 50 ? : false
+
+// ---
+
+// Thanks for your reading to my code ❤
+// @ rfchatt
