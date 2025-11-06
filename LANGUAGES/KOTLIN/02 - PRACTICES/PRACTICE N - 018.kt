@@ -114,3 +114,29 @@ fun main () {
 // ------------------------------------------------------------------------
 
 
+// Exercice 5 : Transformer une liste de chaines
+
+fun main () {
+
+    var names = mutableListOf<String>("Abderrafie", "Taha", "Obaida", "Adnane")
+    println("La liste des nomes : $names")
+
+    var tranforme = { n: String -> n.uppercase() }
+
+    for (n in names) {
+        tranforme(n)
+        println("le nom '$n' en majuscule : " + tranforme(n))
+    }
+
+}
+
+// Run :
+
+// La liste des nomes : [Abderrafie, Taha, Obaida, Adnane]
+// le nom 'Abderrafie' en majuscule : ABDERRAFIE
+// le nom 'Taha' en majuscule : TAHA
+// le nom 'Obaida' en majuscule : OBAIDA
+// le nom 'Adnane' en majuscule : ADNANE
+
+
+// ------------------------------------------------------------------------
