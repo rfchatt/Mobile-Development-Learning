@@ -90,10 +90,14 @@
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/aa720520-3b44-49a6-b348-296cc090507d" /><br>
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/b953f4f1-85df-4275-bbd2-4fa528e20003" />
 
-# Practice N-017 (TP 10) 
+# Practice N-018 (TP 11) 
 ### Questions
 ### Lambda 
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/fdf31fc7-20d0-4a68-941a-16806da7270d" /><br>
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/1f294cf4-c412-45fc-b9c4-031d756f8ab9" />
 
+# Practice N-019 
+### CC 2 : Préparation V1
+### Classes avancées
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/1b1ec192-dcae-419e-96b8-c82d997b1743" />
 
