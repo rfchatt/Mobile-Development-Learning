@@ -140,3 +140,26 @@ fun main () {
 
 
 // ------------------------------------------------------------------------
+
+
+import kotlin.random.Random
+
+// Exercice 6 : Trier une liste
+
+fun main () {
+
+    var numbers = List(7) { (3..76).random() }
+    println("La liste des nombres apres le Triage : $numbers")
+
+    var triage = { ns: List<Int> -> ns.sorted() }
+    println("La liste des nombres avant le Triage : ${triage(numbers)}")
+
+}
+
+// Run :
+
+// La liste des nombres apres le Triage : [75, 19, 61, 22, 9, 24, 34]
+// La liste des nombres avant le Triage : [9, 19, 22, 24, 34, 61, 75]
+
+
+// ------------------------------------------------------------------------
