@@ -149,10 +149,10 @@ import kotlin.random.Random
 fun main () {
 
     var numbers = List(7) { (3..76).random() }
-    println("La liste des nombres apres le Triage : $numbers")
+    println("La liste des nombres avant le Triage : $numbers")
 
     var triage = { ns: List<Int> -> ns.sorted() }
-    println("La liste des nombres avant le Triage : ${triage(numbers)}")
+    println("La liste des nombres après le Triage : ${triage(numbers)}")
 
 }
 
@@ -163,3 +163,25 @@ fun main () {
 
 
 // ------------------------------------------------------------------------
+
+
+// Exercice 7 : Appliquer une opération sur chaque élément
+
+fun main () {
+
+    var numbers = List (10) { (2..23).random() }
+    println("La liste des nombre avant la multiplication : $numbers")
+
+    var multiple = { nbs: List<Int> -> nbs.map { it * 2 } }
+    println("La liste des nombres après la multiplication : ${multiple(numbers)}")
+
+}
+
+// Run :
+
+// La liste des nombre apres la multiplication : [21, 6, 17, 20, 3, 14, 6, 8, 3, 13]
+// La liste des nombres avant la multiplication : [42, 12, 34, 40, 6, 28, 12, 16, 6, 26]
+
+
+// ------------------------------------------------------------------------
+
