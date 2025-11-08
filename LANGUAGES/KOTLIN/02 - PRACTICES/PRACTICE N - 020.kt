@@ -182,11 +182,55 @@ fun main () {
 // --------------------------------------------------------------------------
 
 
+// Exercice 4 : -- INNER class
+
+class Server (var serverName: String, var ipAdress: String) {
+
+    inner class User (var username: String, var role: String) {
+
+        fun connecte () {
+            println("L'utlisateur {$username} {role : $role} est connecté au serveur {$serverName} {$ipAdress}")
+        }
+
+    }
+
+    var users = mutableListOf<User>()
+    fun compter (role: String) {
+        var counting = users.count { it.role == role }
+        println("Le nombre des utilisateurs qui ont le role '$role' est : $counting utilisateur.")
+    }
+
+}
+
+fun main () {
+
+    var server1 = Server("S-1", "192.168.1.7")
+
+    var user1 = server1.User("Abderrafie", "Mobile developer")
+    var user2 = server1.User("Rayan", "admin")
+    var user3 = server1.User("Lara", "Mobile developer")
+
+    user1.connecte()
+    user2.connecte()
+    user3.connecte()
+
+    server1.users.add(user1)
+    server1.users.add(user2)
+    server1.users.add(user3)
+
+    server1.compter("Mobile developer")
+
+}
+
+// Run :
+
+// L'utlisateur {Abderrafie} {role : Mobile developer} est connecté au serveur {S-1} {192.168.1.7}
+// L'utlisateur {Rayan} {role : admin} est connecté au serveur {S-1} {192.168.1.7}
+// L'utlisateur {Lara} {role : Mobile developer} est connecté au serveur {S-1} {192.168.1.7}
+// Le nombre des utilisateurs qui ont le role 'Mobile developer' est : 2 utilisateur.
 
 
-
-
-
+// --------------------------------------------------------------------------
 
 
 
