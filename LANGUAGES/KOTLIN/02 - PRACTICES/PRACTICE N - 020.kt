@@ -233,4 +233,57 @@ fun main () {
 // --------------------------------------------------------------------------
 
 
+// Exercice 5 : -- ENUM class
+
+enum class TaskStatus () {
+
+    TODO, IN_PROGRESS, REVIEW, DONE, BLOCKED
+
+}
+
+class Task (var title: String, var assignedTo: String, var status: TaskStatus) {
+
+    fun updateStatus (task: TaskStatus) {
+        when (task) {
+            TaskStatus.TODO -> {
+                TaskStatus.IN_PROGRESS
+                println("le status de Task mise a jour de (${TaskStatus.TODO}) a (${TaskStatus.IN_PROGRESS}).)")
+            }
+            TaskStatus.IN_PROGRESS -> {
+                TaskStatus.REVIEW
+                println("le status de Task mise a jour de (${TaskStatus.IN_PROGRESS}) a (${TaskStatus.REVIEW}).)")
+            }
+            TaskStatus.REVIEW -> {
+                TaskStatus.DONE
+                println("le status de Task mise a jour de (${TaskStatus.REVIEW}) a (${TaskStatus.DONE}).)")
+            }
+            TaskStatus.BLOCKED -> {
+                println("le status de Task laisse : (${TaskStatus.BLOCKED}).)")
+            }
+            TaskStatus.DONE -> {
+                println("le status de Task est : (${TaskStatus.DONE}).)")
+            }
+        }
+    }
+
+}
+
+fun main () {
+
+    var task1 = Task("Task 1", "A", TaskStatus.TODO)
+    task1.updateStatus(TaskStatus.TODO)
+
+    var task2 = Task("Task 2", "B", TaskStatus.REVIEW)
+    task1.updateStatus(TaskStatus.REVIEW)
+
+}
+
+// Run :
+
+// le status de Task mise a jour de (TODO) a (IN_PROGRESS).)
+// le status de Task mise a jour de (REVIEW) a (DONE).)
+
+
+// --------------------------------------------------------------------------
+
 
