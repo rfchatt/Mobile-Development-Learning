@@ -399,5 +399,28 @@ fun main () {
 // --------------------------------------------------------------------------
 
 
+// Exercice 8 : -- Lambda
+
+fun main () {
+
+    // 1 :
+    var notes = mutableListOf<Double>(19.5, 20.0, 14.75, 16.25, 15.0)
+
+    // 2 :
+    var CalculMoyenne: (List<Double>) -> Double = { notes -> notes.average() }
+
+    // 3 :
+    var somme = notes.reduce { acc, n -> acc + n }
+    var moyenne = somme / notes.size
+    
+    // 4 :
+    println("La somme des notes : $somme")  // 85.5
+    println("La moyenne des notes : $moyenne")  // 17.1
+
+}
+
+
+// --------------------------------------------------------------------------
+
 
 
