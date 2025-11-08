@@ -423,4 +423,28 @@ fun main () {
 // --------------------------------------------------------------------------
 
 
+// Exercice 9 : -- anonyme
 
+fun main() {
+
+    // 1 :
+    var nombres = listOf(3, 8, 15, 20, 25, 30)
+
+    // 2 :
+    var condition = fun(nombre: Int): Boolean {
+        return nombre % 5 == 0 && nombre > 10
+    }
+
+    // 3 :
+    var resultat = nombres.find(condition)
+
+    // 4 :
+    println("Le premier nombre qu'etre multiple de 5 et supérieur à 10 est : $resultat")
+}
+
+// Run :
+
+// Le premier nombre qu'etre multiple de 5 et supérieur à 10 est : 15
+
+
+// Thanks for your reading to my code ;)
