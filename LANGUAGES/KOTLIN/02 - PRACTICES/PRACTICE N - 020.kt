@@ -328,8 +328,75 @@ fun main () {
 // --------------------------------------------------------------------------
 
 
+// Exercice 7 : -- DATA class
+
+// 1 :
+data class Student (var id: Int, var name: String, var grade: Double)
+
+fun main () {
+
+    // 2 :
+    var students = mutableListOf<Student>(
+        Student(1, "Omar", 9.5),
+        Student(3, "Naoufal", 17.0),
+        Student(7, "Kaoutar", 16.5),
+        Student(5, "Yasser", 9.75),
+        Student(9, "Mohamed Nour", 11.25),
+        Student(11, "Niema", 13.0),
+        Student(13, "Iyad", 10.0),
+        Student(15, "Taha", 20.0)
+    )
+
+    // 3 :
+    var studentsUpto12 = students.filter { it.grade >= 12 }
+
+    // 4 :
+    var studentsSorted = studentsUpto12.sortedByDescending { it.grade }
+
+    // 5 :
+    println("-- La liste initiale des étudiants --")
+    for (student in students) {
+        println("ID: ${student.id}, nom: ${student.name}, grade: ${student.grade}")
+    }
+
+    println("-- La liste des étudiants qui ont 12/20 ou plus --")
+    for (student in studentsUpto12) {
+        println("ID: ${student.id}, nom: ${student.name}, grade: ${student.grade}")
+    }
+
+    println("-- La liste des étudiants Tries décroissants par note --")
+    for (student in studentsSorted) {
+        println("ID: ${student.id}, nom: ${student.name}, grade: ${student.grade}")
+    }
+
+}
+
+// Run :
+
+//-- La liste initiale des étudiants --
+//ID: 1, nom: Omar, grade: 9.5
+//ID: 3, nom: Naoufal, grade: 17.0
+//ID: 7, nom: Kaoutar, grade: 16.5
+//ID: 5, nom: Yasser, grade: 9.75
+//ID: 9, nom: Mohamed Nour, grade: 11.25
+//ID: 11, nom: Niema, grade: 13.0
+//ID: 13, nom: Iyad, grade: 10.0
+//ID: 15, nom: Taha, grade: 20.0
+
+//-- La liste des étudiants qui ont 12/20 ou plus --
+//ID: 3, nom: Naoufal, grade: 17.0
+//ID: 7, nom: Kaoutar, grade: 16.5
+//ID: 11, nom: Niema, grade: 13.0
+//ID: 15, nom: Taha, grade: 20.0
+
+//-- La liste des étudiants Tries décroissants par note --
+//ID: 15, nom: Taha, grade: 20.0
+//ID: 3, nom: Naoufal, grade: 17.0
+//ID: 7, nom: Kaoutar, grade: 16.5
+//ID: 11, nom: Niema, grade: 13.0
 
 
+// --------------------------------------------------------------------------
 
 
 
