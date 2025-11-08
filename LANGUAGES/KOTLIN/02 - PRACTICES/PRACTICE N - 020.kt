@@ -287,3 +287,50 @@ fun main () {
 // --------------------------------------------------------------------------
 
 
+// Exercice 6 : -- Map
+
+fun main () {
+
+    // 1 :
+    var etudiants = mutableMapOf<String, Int>()
+
+    // 2 :
+    etudiants["Abderrafie"] = 20
+    etudiants["Youness"] = 19
+    etudiants["Youssef"] = 21
+    etudiants["Redouan"] = 23
+    etudiants["Ayman"] = 20
+    etudiants["Rachid"] = 18
+
+    // 3 :
+    etudiants.entries.removeIf { it.value < 20 }
+
+    // 4 :
+    if ("Karim" in etudiants) {
+        println("L'age de Karim est : ${etudiants["Karim"]} ans.")
+    } else {
+        println("L'étudiant Karim n'existe pas !")
+    }
+
+    // 5 :
+    println("-- La liste des étudiants avec leurs ages plus de 20 ans --")
+    println(etudiants)
+
+}
+
+// Run :
+
+// L'étudiant Karim n'existe pas !
+// -- La liste des étudiants avec leurs ages plus de 20 ans --
+// {Abderrafie=20, Youssef=21, Redouan=23, Ayman=20}
+
+
+// --------------------------------------------------------------------------
+
+
+
+
+
+
+
+
