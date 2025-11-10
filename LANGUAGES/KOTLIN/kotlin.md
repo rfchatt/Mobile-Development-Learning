@@ -57,12 +57,12 @@
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/49bc5729-fa2e-45ec-8585-8379231c74c9" /><br>
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/854577c0-d8e6-4235-b964-1743b5c5769f" />
 
-# Practice N-012 (TP 6 - OOP Global v-1)
+# Practice N-012 (TP 6 - OOP Global V-1)
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/576b56e1-8a0e-426c-88db-78e6fb5f4f31" /><br>
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/ee8762fe-cb8f-4990-9845-2a6ef7bf03cf" />
 
-# Practice N-013 (TP 6 - OOP Global v-2)
+# Practice N-013 (TP 6 - OOP Global V-2)
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/0692edfb-09ff-4976-8c0c-175177372d71" /><br>
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/2d2c31af-965a-4edf-8971-069d7632aa12" />
@@ -100,4 +100,13 @@
 ### CC 2 : Préparation V1
 ### Classes avancées
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/1b1ec192-dcae-419e-96b8-c82d997b1743" />
+
+# Practice N-020 (TP 12 - OOP Global V-3)
+### Questions
+#### enum Class, sealed class, data class & nested class (inner class) , lambda & anonyme
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/a787ccac-736a-47b0-b983-afa0e30a0e83" /><br>
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/918ca964-b9ec-4398-9b73-fc50aad94cf6" /><br>
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/0a46cedf-5101-4e10-b70e-30f81dd282b8" />
+
+
 
