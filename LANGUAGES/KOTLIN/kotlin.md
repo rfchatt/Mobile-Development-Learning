@@ -1,4 +1,4 @@
-<img width="702" height="695" alt="image" src="https://github.com/user-attachments/assets/2f56c33e-ce82-4658-80fc-06ce2cd5dc24" /><img width="704" height="689" alt="image" src="https://github.com/user-attachments/assets/dd43660b-8b1b-461c-939d-b9c7448a63e6" />### 💻 Languages & Tools
+### 💻 Languages & Tools
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" alt="Kotlin" style="width:20%; max-width:100px;"/>
