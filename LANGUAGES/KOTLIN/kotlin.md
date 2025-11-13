@@ -113,5 +113,7 @@
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/d388e4fd-4aca-4d13-9e65-c11a068f6c30" /><br>
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/6379797c-f003-4c91-8616-efc973c7e1c7" />
 
-
+# Practice N-022 (TP 13 - coroutines)
+### Questions
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/b3d3f934-1217-4cd3-8ea3-2d852cb1a01e" />
 
