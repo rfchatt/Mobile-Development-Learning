@@ -21,6 +21,10 @@ fun main() {
    println("Fin du programme principal")
 }
 
+
+// -----------------------------------------------------------
+
+
 // Exercice 2 :
 
 import kotlinx.coroutines.*
@@ -36,6 +40,10 @@ fun main () {
    Thread.sleep(3000)
 
 }
+
+
+// -----------------------------------------------------------
+
 
 // Exercice 3 :
 
@@ -62,6 +70,10 @@ fun main () {
 
 }
 
+
+// -----------------------------------------------------------
+
+
 // Exercice 4 :
 
 import kotlinx.coroutines.*
@@ -77,6 +89,10 @@ fun main () = runBlocking {
    job.join()
 
 }
+
+
+// -----------------------------------------------------------
+
 
 // Exercice 5 :
 
@@ -99,4 +115,41 @@ fun main () = runBlocking {
     job.join()
 
 }
+
+
+// -----------------------------------------------------------
+
+
+// Exercice 6 :
+
+fun main () {
+
+    runBlocking {
+
+        var job1 = launch(Dispatchers.Default) {
+            println("cette thread nomée : [${Thread.currentThread().name }}] (Default).")
+        }
+        var job2 = launch(Dispatchers.IO) {
+            println("cette thread nomée : [${Thread.currentThread().name }}] (IO).")
+        }
+        var job3 = launch(Dispatchers.Unconfined) {
+            println("cette thread nomée : [${Thread.currentThread().name }}] (Unconfined).")
+        }
+
+        job1.join()
+        job2.join()
+        job3.join()
+
+    }
+
+}
+
+// Run :
+
+// cette thread nomée : [DefaultDispatcher-worker-1}] (Default).
+// cette thread nomée : [DefaultDispatcher-worker-1}] (IO).
+// cette thread nomée : [main}] (Unconfined).
+
+
+// -----------------------------------------------------------
 
