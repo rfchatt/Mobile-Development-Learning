@@ -226,3 +226,60 @@ fun main () = runBlocking {
 
 
 // ------------------------------------------------------------------------------
+
+
+package TP13_KOTLIN
+
+import kotlinx.coroutines.*
+
+// Exercice 5 :
+
+fun main () = runBlocking {
+
+    println("== Début de l'Application 5 ==")
+
+    var scope = CoroutineScope(Job() + Dispatchers.Default)
+
+    var job1 = scope.launch{
+        repeat(6) { i ->
+            println("job 1 étape : $i")
+            delay(500)
+        }
+    }
+
+    var job2 = scope.launch{
+        repeat(3) { j ->
+            println("job 2 étape : $j")
+            delay(1000)
+        }
+    }
+
+    delay(2000)
+
+    println("-- Annulation de Scope --")
+    scope.cancel()
+    println("Scope Annulé !")
+
+    delay(1000)
+    println("== Fin de l'Application. ==")
+
+}
+
+// Run : 
+
+// == Début de l'Application 5 ==
+// job 1 étape : 0
+// job 2 étape : 0
+// job 1 étape : 1
+// job 2 étape : 1
+// job 1 étape : 2
+// job 1 étape : 3
+// -- Annulation de Scope --
+// job 2 étape : 2
+// Scope Annulé !
+// == Fin de l'Application. ==
+
+
+// ------------------------------------------------------------------------------
+
+
