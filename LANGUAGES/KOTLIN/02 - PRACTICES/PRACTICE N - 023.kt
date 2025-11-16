@@ -283,3 +283,66 @@ fun main () = runBlocking {
 // ------------------------------------------------------------------------------
 
 
+package TP13_KOTLIN
+
+import kotlinx.coroutines.*
+
+// Exercice 6 :
+
+// 1-
+suspend fun verifierDisponibilite (ingredients: List<String>) {
+
+    println("-- Vérification des ingrédients.. --")
+
+    if (ingredients.isEmpty()) {
+        println("Aucun ingrédient disponible !")
+    }
+    else {
+        println("La liste des ingrédients Trouvés : ")
+        for (ingredient in ingredients) {
+            println("- [$ingredient]")
+        }
+    }
+    delay(2000)
+    println("-- Fin de Vérification! --")
+}
+
+// 2-
+suspend fun prepareCommande () {
+    println("-- La préparation de Commande en cours.. --")
+    delay(5000)
+    println("La commande a été préparée avec succés !")
+}
+
+suspend fun livrerRepas() = withContext(Dispatchers.IO) {
+    println("-- La livraison du repas en cours.. --")
+    delay(3000)
+    println("✅ Le repas a été livré au client !")
+}
+
+
+
+fun main () = runBlocking {
+
+    var ingredients = mutableListOf<String>("Pizza", "Tacos", "Tajin", "Couscous")
+
+    prepareCommande()
+    
+    var jobVerif = launch { 
+        verifierDisponibilite(ingredients)
+    }
+    jobVerif.join()
+    
+    var jobPrep = launch { 
+        prepareCommande()
+    }
+    jobPrep.join()
+    
+    var jobLivrsn = launch { 
+        livrerRepas()
+    }
+    jobLivrsn.join()
+
+}
+
+// Thanks 4 ur reading to my code ;) 
