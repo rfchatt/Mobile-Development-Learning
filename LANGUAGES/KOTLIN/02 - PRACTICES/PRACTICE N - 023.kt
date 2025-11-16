@@ -111,3 +111,60 @@ fun main () = runBlocking {
 
 
 // ------------------------------------------------------------------------------
+
+
+package TP13_KOTLIN
+
+import kotlinx.coroutines.*
+import kotlin.system.measureTimeMillis
+
+// Exercice 3 :
+
+fun main () = runBlocking {
+
+    println("== Début de l'Application ==")
+
+    var calcule = async {
+        println("calcule démaré..")
+        delay(2000)
+        var result = 7 * 7
+        println("Fin de calcule.")
+        result
+    }
+
+    var appelResau = async {
+        println("Appel réseau démaré..")
+        delay(1500)
+        var donnees = "Stagiaire : 'Abderrafie', Age : '20', ville : 'Tanger'."
+        println("Fin d'Appel réseau.")
+        donnees
+    }
+
+    var temps = measureTimeMillis {
+        var result1 = calcule.await()
+        var result2 = appelResau.await()
+        println("Résultat de Calcul : $result1")
+        println("Résultat d'Appel réseau : $result2")
+    }
+
+    println("Temps Total d'exécution : ${temps} s")
+    println("== Fin de l'Application ==")
+
+}
+
+// Run :
+
+// == Début de l'Application ==
+// calcule démaré..
+// Appel réseau démaré..
+// Fin d'Appel réseau.
+// Fin de calcule.
+// Résultat de Calcul : 49
+// Résultat d'Appel réseau : Stagiaire : 'Abderrafie', Age : '20', ville : 'Tanger'.
+// Temps Total d'exécution : 2031 s
+// == Fin de l'Application ==
+
+
+// ------------------------------------------------------------------------------
+
+
