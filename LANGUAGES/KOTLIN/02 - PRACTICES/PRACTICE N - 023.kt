@@ -168,3 +168,61 @@ fun main () = runBlocking {
 // ------------------------------------------------------------------------------
 
 
+package TP13_KOTLIN
+
+import kotlinx.coroutines.*
+
+// Exercice 4 :
+
+fun main () = runBlocking {
+
+    println("== Début de l'Application 4 ==")
+
+    var job1 = launch {
+        repeat(5) { i ->
+            println("Coroutine 1 - étape $i")
+            delay(1000)
+        }
+        println("coroutine 1 Terminé")
+    }
+
+    var job2 = launch {
+        repeat(3) { j ->
+            println("Coroutine 1 - étape $j")
+            delay(1000)
+        }
+        println("coroutine 2 Terminé")
+    }
+
+    println("Coroutine 1 Actif ? : ${job1.isActive}")
+    println("Coroutine 2 Actif ? : ${job2.isActive}")
+
+    println("Annulation de Coroutine 1 ..")
+    job1.cancel()
+    println("vérificatio de coroutine 1 aprés l'Annulation : ${job1.isActive}")
+
+    println("Attente de la fin de coroutine 2..")
+    job2.join()
+    println("Coroutine 2, Terminé")
+
+    println("== Fin de l'Application ==")
+
+}
+
+// Run :
+
+// == Début de l'Application 4 ==
+// Coroutine 1 Actif ? : true
+// Coroutine 2 Actif ? : true
+// Annulation de Coroutine 1 ..
+// vérificatio de coroutine 1 aprés l'Annulation : false
+// Attente de la fin de coroutine 2..
+// Coroutine 1 - étape 0
+// Coroutine 1 - étape 1
+// Coroutine 1 - étape 2
+// coroutine 2 Terminé
+// Coroutine 2, Terminé
+// == Fin de l'Application ==
+
+
+// ------------------------------------------------------------------------------
