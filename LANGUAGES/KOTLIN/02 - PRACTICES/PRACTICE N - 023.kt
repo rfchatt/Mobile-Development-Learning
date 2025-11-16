@@ -49,7 +49,7 @@ fun main() {
 // ------------------------------------------------------------------------------
 
 
-package TP13_KOTLIN
+package TP15_KOTLIN
 
 import kotlinx.coroutines.*
 
@@ -113,7 +113,7 @@ fun main () = runBlocking {
 // ------------------------------------------------------------------------------
 
 
-package TP13_KOTLIN
+package TP15_KOTLIN
 
 import kotlinx.coroutines.*
 import kotlin.system.measureTimeMillis
@@ -168,7 +168,7 @@ fun main () = runBlocking {
 // ------------------------------------------------------------------------------
 
 
-package TP13_KOTLIN
+package TP15_KOTLIN
 
 import kotlinx.coroutines.*
 
@@ -228,7 +228,7 @@ fun main () = runBlocking {
 // ------------------------------------------------------------------------------
 
 
-package TP13_KOTLIN
+package TP15_KOTLIN
 
 import kotlinx.coroutines.*
 
@@ -283,7 +283,7 @@ fun main () = runBlocking {
 // ------------------------------------------------------------------------------
 
 
-package TP13_KOTLIN
+package TP15_KOTLIN
 
 import kotlinx.coroutines.*
 
@@ -317,7 +317,7 @@ suspend fun prepareCommande () {
 suspend fun livrerRepas() = withContext(Dispatchers.IO) {
     println("-- La livraison du repas en cours.. --")
     delay(3000)
-    println("✅ Le repas a été livré au client !")
+    println("Le repas a été livré au client !")
 }
 
 
