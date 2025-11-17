@@ -117,3 +117,15 @@
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/b3d3f934-1217-4cd3-8ea3-2d852cb1a01e" />
 
+
+# Practice N-023 (TP 15 - coroutines)
+### Questions
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/68975a70-9105-4ebb-b502-90a1f0d59d8e" /><br>
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/13ce7ef6-9d9e-4c21-8204-8d892afd2db5" />
+
+# Practice N-024 (TP 16 - lateinit/by lazy/Try-catch)
+### Questions
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/aaf04765-4891-4d8b-ab10-5d5c2d88fede" /><br>
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/baabdf82-6dc7-463e-990a-1082d40cf7ff" />
+
+
