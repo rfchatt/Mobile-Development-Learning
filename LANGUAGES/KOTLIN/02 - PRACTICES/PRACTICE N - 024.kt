@@ -245,3 +245,53 @@ fun main () {
 
 
 // -----------------------------------------------------------------------
+
+
+package TP14_KOTLIN
+
+// Exercice 6 : --
+
+fun convertToInList (chaines: List<String>): List<Int> {
+
+    var entiers = mutableListOf<Int>()
+
+    try {
+        for (ch in chaines) {
+            var ch_Int = ch.toInt()
+            entiers.add(ch_Int)
+            println("Conversion réussie : $ch -> $ch_Int")
+        }
+    }
+    catch (e: Exception) {
+        println("Erreur de type : [$e]")
+    }
+
+    return entiers
+}
+
+fun main () {
+
+    var chaines = mutableListOf("1991", "2025", "2008", "rfchatt")
+
+    println("Liste des chaines : $chaines \n")
+
+    var resultat = convertToInList(chaines)
+
+    println("\n Résultat : $resultat \n")
+
+}
+
+// Run : 
+
+// Liste des chaines : [1991, 2025, 2008, rfchatt]
+
+// Conversion réussie : 1991 -> 1991
+// Conversion réussie : 2025 -> 2025
+// Conversion réussie : 2008 -> 2008
+// Erreur de type : [java.lang.NumberFormatException: For input string: "rfchatt"]
+
+// Résultat : [1991, 2025, 2008] 
+
+
+
+//  @rfchatt
