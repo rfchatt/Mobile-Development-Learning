@@ -190,3 +190,58 @@ fun main() {
 
 
 // -----------------------------------------------------------------------
+
+
+package TP14_KOTLIN
+
+// Exercice 5 : --
+
+class monClass : Runnable {
+
+    override fun run () {
+        for (l in 'A'..'Z') {
+            println(l)
+            Thread.sleep(500)
+        }
+    }
+
+}
+
+fun main () {
+
+    var obj = Thread(monClass())
+    obj.start()
+
+}
+
+// Run :
+
+// A + (delai de 500ms)
+// B
+// C
+// D
+// E
+// F
+// G
+// H
+// I
+// J
+// K
+// L
+// M
+// N
+// O
+// P
+// Q
+// R
+// S
+// T
+// U
+// V
+// W
+// X
+// Y
+// Z
+
+
+// -----------------------------------------------------------------------
