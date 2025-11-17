@@ -143,3 +143,50 @@ fun main () {
 
 // -----------------------------------------------------------------------
 
+
+package TP16_KOTLIN
+
+// Exercice 4 : --
+
+class UtilisateurService () {
+
+    fun chargerUtilisateurs () {
+        println("Utilisateurs chargés")
+    }
+
+}
+
+class Application () {
+
+    lateinit var utilisateurService: UtilisateurService
+
+    fun initialiser () {
+        println("Service initialisé")
+        utilisateurService = UtilisateurService()
+    }
+
+    fun utiliser () {
+        utilisateurService.chargerUtilisateurs()
+    }
+
+}
+
+
+
+fun main() {
+
+    val app = Application()
+
+    app.initialiser()
+
+    app.utiliser()
+
+}
+
+// Run : 
+
+// Service initialisé
+// Utilisateurs chargés
+
+
+// -----------------------------------------------------------------------
