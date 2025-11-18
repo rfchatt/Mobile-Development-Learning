@@ -128,4 +128,8 @@
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/aaf04765-4891-4d8b-ab10-5d5c2d88fede" /><br>
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/baabdf82-6dc7-463e-990a-1082d40cf7ff" />
 
+# Practice N-025 (TP 17 - High Order Functions)
+### Questions
+<img width="608" height="682" alt="image" src="https://github.com/user-attachments/assets/4e39f097-cda6-4584-9878-0f90ce44f235" />
+
 
