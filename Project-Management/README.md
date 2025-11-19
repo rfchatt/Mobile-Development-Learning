@@ -1,5 +1,4 @@
-# Project Management
-## Gestion du Projet [Module] 
+# Gestion du Projet (Module)
 
 ### 001 Classes Diagram
 #### Questions
