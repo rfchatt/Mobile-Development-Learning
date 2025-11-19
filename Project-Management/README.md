@@ -3,7 +3,7 @@
 
 ### Class Diagram | Practice N-001
 #### Questions
-<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/c38b6a55-ad02-4d84-b214-af053233ba75" />
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/aba2fe12-3d27-404a-8d0a-1af7476867af" />
 <img width="49%%" height="50%" alt="image" src="https://github.com/user-attachments/assets/064ef62e-7ca9-45f8-97aa-9f55cb2dc7a8" />
 
 ### Class Diagram | Practice N-002
