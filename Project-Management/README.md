@@ -7,9 +7,8 @@
 <img width="49%%" height="50%" alt="image" src="https://github.com/user-attachments/assets/064ef62e-7ca9-45f8-97aa-9f55cb2dc7a8" />
 
 ## Practice N-002 
-#### Questions
-<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/d2acaf2a-58ce-44a7-a513-2bf7df2245bd" /><br>
-#### Solutions (Class Diagram)
+#### Questions | (Class Diagram)
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/d2acaf2a-58ce-44a7-a513-2bf7df2245bd" />
 <img width="49%" height="50%" alt="image" src="https://github.com/user-attachments/assets/3e86c60e-2e10-45b0-85c3-d4e14b11656a" />
 
 ## Practice N-003 
