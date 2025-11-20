@@ -12,10 +12,9 @@
 <img width="49%" height="50%" alt="image" src="https://github.com/user-attachments/assets/3e86c60e-2e10-45b0-85c3-d4e14b11656a" />
 
 ## Practice N-003 
-#### Questions 
-<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/101d93b7-065b-461e-bcf6-21f64a21698a" /><br>
-#### Solutions (PERT Graph)
-<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/277338f1-6da6-41d0-a7bf-82db7279f1ab" />
+#### Questions | (PERT Graph)
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/101d93b7-065b-461e-bcf6-21f64a21698a" />
+<img width="49%" height="50%" alt="image" src="https://github.com/user-attachments/assets/277338f1-6da6-41d0-a7bf-82db7279f1ab" />
 
 ## Practice N-004
 #### Questions 
