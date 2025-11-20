@@ -18,3 +18,4 @@
 ## Practice N-004
 #### Questions | (Gantt Graph)
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/a5ced7d3-1201-420a-a3b3-477d8f30e283" />
+<img width="49%" height="50%" alt="image" src="https://github.com/user-attachments/assets/5684f403-180d-4702-b995-f6dc1d72c803" />
