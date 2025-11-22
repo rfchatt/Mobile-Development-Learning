@@ -24,3 +24,10 @@
 #### Questions | (Gantt Graph)
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/e143d3c9-5e8f-496a-908e-d856fe2c8e3f" />
 <img width="49%" height="50%" alt="image" src="https://github.com/user-attachments/assets/0f46bde5-646e-4b2d-8a54-7effef5608c3" />
+
+## Practice N-006
+#### Questions | (PERT Graph)
+<img width="49%" height="50%" alt="image" src="https://github.com/user-attachments/assets/227dde92-3d41-4002-831e-04f93fd6fa7d" />
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/171dff6b-507a-4abe-aaf4-1c8d39c78d24" />
+
+
