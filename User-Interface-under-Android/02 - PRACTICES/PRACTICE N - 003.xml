@@ -1,0 +1,122 @@
+<!-- 
+path : 
+____________________________________
+-- app ---------------------------- |
+---- src -------------------------- |
+------- main ---------------------- |
+---------- java ------------------- |
+-------------- MainActivity ------- |
+---------- res -------------------- |
+-------------- drawable ----------- |
+----------------- cmc.png --------- |
+-------------- layout ------------- |
+----------------- activity_main.xml | ✔
+____________________________________|
+
+-->
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <!-- image field -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/cmc"
+        android:scaleType="fitCenter"
+        android:contentDescription="CMCTTA"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/name"
+        />
+
+    <!-- name field  -->
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Nom"
+        android:nextFocusDown="@+id/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        />
+
+      <!-- email field  -->
+  
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:nextFocusDown="@+id/phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Téléphone"
+        android:inputType="phone"
+        android:nextFocusDown="@id/message"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        />
+
+      <!-- message field  -->
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:hint="Message"
+        android:inputType="textMultiLine"
+        android:Lines="3"
+        android:nextFocusDown="@id/btn_submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        />
+
+      <!-- button field  -->
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:focusable="true"
+        android:text="Envoyer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
