@@ -1,7 +1,7 @@
 ### 💻 Languages & Tools
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/xml/xml-original.svg" alt="XML" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/xml/xml-original.svg" alt="XML" style="width:20%; max-width:100px;"/>
 </p>
 
 ---
