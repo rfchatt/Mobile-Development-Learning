@@ -25,6 +25,19 @@ ____________________________________|
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Background image field -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/cmcback"
+        android:scaleType="centerCrop"
+        android:alpha="0.3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    
     <!-- image field -->
 
     <ImageView
@@ -34,6 +47,7 @@ ____________________________________|
         android:contentDescription="CMCTTA"
         android:scaleType="fitCenter"
         android:src="@drawable/cmc"
+        android:layout_marginTop="60dp"
         app:layout_constraintBottom_toTopOf="@id/name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,6 +60,7 @@ ____________________________________|
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:hint="Nom"
+        android:background="#FFFFFF"
         android:nextFocusDown="@+id/email"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,6 +75,7 @@ ____________________________________|
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:hint="Email"
+        android:background="#FFFFFF"
         android:inputType="textEmailAddress"
         android:nextFocusDown="@+id/phone"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -73,13 +89,14 @@ ____________________________________|
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:hint="Téléphone"
+        android:background="#FFFFFF"
         android:inputType="phone"
         android:nextFocusDown="@id/message"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.34" 
+        app:layout_constraintVertical_bias="0.34"
         />
 
     <!-- message field  -->
@@ -90,13 +107,14 @@ ____________________________________|
         android:layout_height="100dp"
         android:Lines="3"
         android:hint="Message"
+        android:background="#FFFFFF"
         android:inputType="textMultiLine"
         android:nextFocusDown="@id/btn_submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.41" 
+        app:layout_constraintVertical_bias="0.44"
         />
 
     <!--  SeekBar field  -->
@@ -111,7 +129,7 @@ ____________________________________|
         android:progress="25"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/message" 
+        app:layout_constraintTop_toBottomOf="@+id/message"
         />
 
     <TextView
@@ -122,7 +140,7 @@ ____________________________________|
         android:text="Niveau de satisfaction"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar" 
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
         />
 
     <!--  Spinner field  -->
@@ -204,3 +222,4 @@ ____________________________________|
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
+<!-- @rfchatt -->
