@@ -8,4 +8,4 @@
 
 # Practice N-003 ( TP 3 )
 ### Questions
-<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/659e7062-7de0-4c35-94c7-3bc78cd3c888" />
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/35f00c96-db5d-4c2c-b058-c2b548ce74e6" />
