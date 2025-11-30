@@ -1,0 +1,291 @@
+<!-- 
+path :  
+____________________________________
+-- app ---------------------------- |
+---- src -------------------------- |
+------- main ---------------------- |
+---------- java ------------------- |
+-------------- MainActivity ------- |
+---------- res -------------------- |
+-------------- drawable ----------- |
+----------------- ( icons here ) -- |
+-------------- layout ------------- |
+----------------- activity_main.xml | ✔
+____________________________________|
+
+-->
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--  The Heading in the Top  -->
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/AppBar"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="120dp"
+        android:background="#b0a7dd"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/black"
+        android:text="Find Jobs"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/AppBar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="24dp"
+        />
+
+    <!--  The 1st LinearLayout || Designer, Gym Trainer & Teacher  -->
+
+    <LinearLayout
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <!-- Designer -->
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_designer"
+            android:scaleType="centerInside"
+            android:padding="15dp"
+            android:contentDescription="Designer"
+            android:background="@drawable/rounded_bg"
+            android:backgroundTint="#b0a7dd"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Designer"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp" />
+
+        <!-- Gym Trainer -->
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_gymtrainer"
+            android:scaleType="centerInside"
+            android:padding="15dp"
+            android:contentDescription="Gym Trainer"
+            android:background="@drawable/rounded_bg"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#d0fefe" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gym Trainer"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp" />
+
+        <!-- Teacher -->
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_teacher"
+            android:scaleType="centerInside"
+            android:padding="15dp"
+            android:contentDescription="Teacher"
+            android:background="@drawable/rounded_bg"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#ebfaff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teacher"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+    <!--  The 2nd LinearLayout || Developer, Electrician & Sales man   -->
+
+    <LinearLayout
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn1"
+        >
+
+        <!-- Developer -->
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_developer"
+            android:scaleType="centerInside"
+            android:padding="15dp"
+            android:contentDescription="Developer"
+            android:background="@drawable/rounded_bg"
+            android:backgroundTint="#f2dfc1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Developer"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp" />
+
+        <!-- Electrician -->
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_electrician"
+            android:scaleType="centerInside"
+            android:padding="15dp"
+            android:contentDescription="Electrician"
+            android:background="@drawable/rounded_bg"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#f9deff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electrician"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp" />
+
+        <!-- Sales man -->
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_salesman"
+            android:scaleType="centerInside"
+            android:padding="15dp"
+            android:contentDescription="Sales man"
+            android:background="@drawable/rounded_bg"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#ffeaff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sales man"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+    <!--  The 3rd LinearLayout || Doctor, Manager & More   -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Doctor -->
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_doctor"
+            android:scaleType="centerInside"
+            android:padding="15dp"
+            android:contentDescription="Doctor"
+            android:background="@drawable/rounded_bg"
+            android:backgroundTint="#ebf9d5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp" />
+
+        <!-- Manager -->
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_manager"
+            android:scaleType="centerInside"
+            android:padding="15dp"
+            android:contentDescription="Manager"
+            android:background="@drawable/rounded_bg"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#fdefee" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manager"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp" />
+
+        <!-- More -->
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_more"
+            android:scaleType="centerInside"
+            android:padding="25dp"
+            android:contentDescription="More"
+            android:background="@drawable/rounded_bg"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#f4f4f4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+<!-- @rfchatt -->
