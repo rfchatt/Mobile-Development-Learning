@@ -15,3 +15,8 @@
 ### Questions
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/d7376cd3-e280-4d57-ada9-30d23d930d02" />
 <img width="49%" height="50%" alt="image" src="https://github.com/user-attachments/assets/0d41c72e-6dd5-470b-a176-bcbd8193b5db" />
+
+# Practice N-005 ( TP 5 )
+### Questions
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/326b4f12-8b8b-4067-afb6-f1e5acb07873" />
+<img width="49%" height="50%" alt="image" src="https://github.com/user-attachments/assets/2aeb5027-264e-40cd-8c7d-1dc76d9bc4db" />
