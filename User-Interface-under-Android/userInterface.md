@@ -18,5 +18,8 @@
 
 # Practice N-005 ( TP 5 )
 ### Questions
-<img width="40%" height="50%" alt="image" src="https://github.com/user-attachments/assets/326b4f12-8b8b-4067-afb6-f1e5acb07873" />
-<img width="59%" height="50%" alt="image" src="https://github.com/user-attachments/assets/2aeb5027-264e-40cd-8c7d-1dc76d9bc4db" />
+<img width="30%" height="50%" alt="image" src="https://github.com/user-attachments/assets/326b4f12-8b8b-4067-afb6-f1e5acb07873" />
+<img width="30%" height="50%" alt="image" src="https://github.com/user-attachments/assets/2aeb5027-264e-40cd-8c7d-1dc76d9bc4db" />
+<img width="20%" height="50%" alt="image" src="https://github.com/user-attachments/assets/934039bb-e3ee-4245-a2a9-aeaa4f4a434f" />
+<img width="20%" height="50%" alt="image" src="https://github.com/user-attachments/assets/bfb92fc9-30cf-40ef-9a58-7aeaf1f2da2c" />
+
