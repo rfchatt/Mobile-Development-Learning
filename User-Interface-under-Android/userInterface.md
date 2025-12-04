@@ -23,3 +23,12 @@
 <img width="20%" height="50%" alt="image" src="https://github.com/user-attachments/assets/934039bb-e3ee-4245-a2a9-aeaa4f4a434f" />
 <img width="20%" height="50%" alt="image" src="https://github.com/user-attachments/assets/bfb92fc9-30cf-40ef-9a58-7aeaf1f2da2c" />
 
+# Practice N-006 ( TP 6 )
+### Questions
+#### Main, Inscription, Login & Profil
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/a5978110-3d23-48e0-9d98-320507509129" />
+<img width="49%" height="50%" alt="image" src="https://github.com/user-attachments/assets/0f969029-adf7-4e97-9944-97aa43fa62fb" />
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/1f912a78-a32c-489b-a11c-6bcdb46d6ee9" />
+<img width="49%" height="50%" alt="image" src="https://github.com/user-attachments/assets/4bd1c469-2311-4ea1-b9d1-d0a2a8e97384" />
+
+
