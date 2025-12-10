@@ -120,3 +120,1290 @@ class forgotPWActivity : AppCompatActivity() {
     }
 }
 
+
+<!-----  loginActivity  ----->
+
+
+package com.example.store_4u
+
+import android.content.Intent
+import android.os.Bundle
+import android.widget.TextView
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.button.MaterialButton
+
+class loginActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_login)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.login)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+
+        // forgot password text  -->  forgot password Activity
+        val forgot_password = findViewById<TextView>(R.id.forgot_password)
+        forgot_password.setOnClickListener {
+            intent = Intent(this, forgotPWActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Login Button  -->  payment Activity
+        val btn_login = findViewById<MaterialButton>(R.id.btn_login)
+        btn_login.setOnClickListener {
+            intent = Intent(this, paymentActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Sign Up text  -->  Sign in Activity
+        val sign_up = findViewById<TextView>(R.id.sign_up_text)
+        sign_up.setOnClickListener {
+            intent = Intent(this, sign_inActivity::class.java)
+            startActivity(intent)
+        }
+
+
+
+    }
+}
+
+
+<!-----  MainActivity  ----->
+
+
+package com.example.store_4u
+
+import android.content.Intent
+import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.button.MaterialButton
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_main)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+
+        // Get Started Button  -->  Sign in Activity
+        val btn_getStarted = findViewById<MaterialButton>(R.id.btn_getStarted)
+        btn_getStarted.setOnClickListener {
+            val intent = Intent(this, sign_inActivity::class.java)
+            startActivity(intent)
+        }
+
+    }
+}
+
+
+<!-----  paymentActivity  ----->
+
+
+package com.example.store_4u
+
+import android.content.Intent
+import android.os.Bundle
+import android.widget.ImageButton
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.button.MaterialButton
+
+class paymentActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_payment)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.payment)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+
+        // Go Back Button  -->  Main Activity
+        val go_back = findViewById<ImageButton>(R.id.go_back)
+        go_back.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Submit Button  -->  Alert Dialog
+        val btn_continue = findViewById<MaterialButton>(R.id.btn_continue)
+
+        btn_continue.setOnClickListener {
+            val message = "Payment done successfully."
+            AlertDialog.Builder(this)
+                .setMessage(message)
+                .show()
+        }
+
+
+    }
+}
+
+
+<!-----  sign_inActivity  ----->
+
+
+package com.example.store_4u
+
+import android.content.Intent
+import android.os.Bundle
+import android.widget.TextView
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.button.MaterialButton
+
+class sign_inActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_sign_in)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.sign_in)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+
+        // login text  -->  Login Activity
+        val login = findViewById<TextView>(R.id.login_text)
+        login.setOnClickListener {
+            val intent = Intent(this, loginActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Create account Button  -->  payment Activity
+        val signin_btn = findViewById<MaterialButton>(R.id.btn_signin)
+        signin_btn.setOnClickListener {
+            intent = Intent(this, paymentActivity::class.java)
+            startActivity(intent)
+        }
+
+
+    }
+}
+
+
+<!-----  activity_forgot_pw.xml  ----->
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/forgot_pw"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".forgotPWActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="Forgot \npassword?"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:fontFamily="serif"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/user_email"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:hint="Enter your email adress"
+        android:textColorHint="#626262"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/border_radius"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+
+        android:drawableStart="@drawable/ic_emailx"
+        android:drawablePadding="10dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/user_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#f73657"
+            android:textSize="16sp"
+            android:text="*"
+            />
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginStart="5dp"
+            android:text="We will send you a message to set or reset your new password"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_signin"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#f73657"
+        android:layout_marginTop="30dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="8dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!-----  activity_login.xml  ----->
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginActivity">
+
+
+    <!-- Main LinearLayout that gave the white color of background -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center"
+        />
+
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome \nBack!"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:fontFamily="serif"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <!-- user's Email | Username -->
+    <EditText
+        android:id="@+id/user_email"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:hint="Username or Email"
+        android:textColorHint="#626262"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/border_radius"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+
+        android:drawableStart="@drawable/ic_personx"
+        android:drawablePadding="10dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <!-- user's Password -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:hint="Password"
+        android:textColorHint="#626262"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:background="@drawable/border_radius"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+
+        android:drawableStart="@drawable/ic_lockx"
+        android:drawablePadding="10dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/user_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <!-- forgot Password word clickable -->
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#f73657"
+        android:textSize="15dp"
+        android:text="Forgot Password ?"
+        android:textAlignment="textEnd"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <!-- Login Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#f73657"
+        android:layout_marginTop="30dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/forgot_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="8dp"/>
+
+
+    <!-- Text to other options of Login with -->
+    <TextView
+        android:id="@+id/text_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="- OR continue with -"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <!-- Group Of the 3 Options of Login with -->
+    <LinearLayout
+        android:id="@+id/options"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/text_options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <!-- Login with Google -->
+        <ImageButton
+            android:layout_width="60dp"
+            android:background="@drawable/options_radius"
+            android:padding="20dp"
+            android:src="@drawable/ic_google"
+            android:scaleType="centerInside"
+            android:layout_height="match_parent"
+            />
+
+
+        <!-- Space -->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+        <!-- Login with Apple -->
+        <ImageButton
+            android:layout_width="60dp"
+            android:background="@drawable/options_radius"
+            android:padding="20dp"
+            android:src="@drawable/ic_apple"
+            android:scaleType="centerInside"
+            android:layout_height="match_parent"
+            />
+
+
+        <!-- Space -->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+        <!-- Login with Facebook -->
+        <ImageButton
+            android:layout_width="60dp"
+            android:background="@drawable/options_radius"
+            android:padding="15dp"
+            android:src="@drawable/ic_facebook"
+            android:scaleType="centerInside"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+
+    <!-- Sing Up Text Option -->
+    <LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/last_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="Create an Account ? "
+            app:layout_constraintTop_toBottomOf="@+id/options"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+        <!-- Sign Up clickable -->
+        <TextView
+            android:id="@+id/sign_up_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f83758"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Sign Up"
+            app:layout_constraintTop_toBottomOf="@+id/options"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!-----  activity_main.xml  ----->
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!-- Background's image -->
+    <LinearLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_background"
+        android:orientation="vertical"
+        android:alpha="0.7"
+        />
+
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       You Want \n Authentic, here \n          you go"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="150dp"
+        android:fontFamily="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+    <!-- Text -->
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find it now, buy it now !"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <!-- Get Started Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_getStarted"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#fc3556"
+        android:textColor="@color/white"
+        android:text="Get Started"
+        android:textSize="20dp"
+        android:fontFamily="serif"
+        app:cornerRadius="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!-----  activity_payment.xml  ----->
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payment"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".paymentActivity">
+
+
+    <!-- Main LinearLayout that gave the white color of background -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        />
+
+
+    <!-- LinearLayout as a toolbar -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <!-- go back Image Button -->
+        <ImageButton
+            android:id="@+id/go_back"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back_arrow"
+            android:scaleType="centerInside"
+            android:padding="23dp"
+            android:backgroundTint="@color/white"
+            />
+
+
+        <!-- toolbar Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Checkout"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            />
+
+        <View
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+
+    <!-- Main LinearLayout that contains Order, Shipping, Total & Payment linearlayouts -->
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+
+        <!-- LinearLayout that contains Order, Shipping, Total linearlayouts -->
+        <LinearLayout
+            android:id="@+id/order_total"
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+
+            <!-- Order LinearLayout -->
+            <LinearLayout
+                android:id="@+id/order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order"
+                    android:fontFamily="serif"
+                    android:textSize="20sp"
+                    android:textColor="#a8a8a9"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$ 7.000"
+                    android:fontFamily="serif"
+                    android:textSize="20sp"
+                    android:textColor="#a8a8a9"
+                    />
+
+            </LinearLayout>
+
+
+            <!-- Shipping LinearLayout -->
+            <LinearLayout
+                android:id="@+id/shipping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shipping"
+                    android:fontFamily="serif"
+                    android:textSize="20sp"
+                    android:textColor="#a8a8a9"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$ 30"
+                    android:fontFamily="serif"
+                    android:textSize="20sp"
+                    android:textColor="#a8a8a9"
+                    />
+
+            </LinearLayout>
+
+
+            <!-- Total LinearLayout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$ 7.030"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+
+            <!-- Horizontally Line -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#d6d6d6"
+                />
+
+        </LinearLayout>
+
+
+        <!-- Payment LinearLayout -->
+        <LinearLayout
+            android:id="@+id/order_payment"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+
+            <!-- Payment Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="serif"
+                />
+
+
+            <!-- Visa payment LineaLayout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingRight="20dp"
+                android:background="#f4f4f4"
+
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_visa"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:textSize="12sp"
+                    android:textColor="#84868e"
+                    android:text="*******2109"
+                    />
+
+            </LinearLayout>
+
+
+            <!-- PayPal payment LineaLayout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingRight="20dp"
+                android:background="#f4f4f4"
+
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_paypal"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:textSize="12sp"
+                    android:textColor="#84868e"
+                    android:text="*******2109"
+                    />
+
+            </LinearLayout>
+
+
+            <!-- Master Card payment LineaLayout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingRight="20dp"
+                android:background="#f4f4f4"
+
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_mastercard"
+                    android:padding="17dp"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:textSize="12sp"
+                    android:textColor="#84868e"
+                    android:text="*******2109"
+                    />
+
+            </LinearLayout>
+
+
+            <!-- Apple payment LineaLayout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingRight="20dp"
+                android:background="#f4f4f4"
+
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_apple"
+                    android:padding="17dp"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:textSize="12sp"
+                    android:textColor="#84868e"
+                    android:text="*******2109"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- Continue Button -> Alert Dialog -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_continue"
+            android:layout_width="330dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#f83758"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:cornerRadius="8dp"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!-----  activity_sign_in.xml  ----->
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_in"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign_inActivity">
+
+
+    <!-- Main LinearLayout that gave the white color of background -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center"
+        />
+
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="Create an \nAccount"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:fontFamily="serif"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <!-- user's Email | Username -->
+    <EditText
+        android:id="@+id/user_email"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:hint="Username or Email"
+        android:textColorHint="#626262"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/border_radius"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+
+        android:drawableStart="@drawable/ic_personx"
+        android:drawablePadding="10dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <!-- user's Password -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:hint="Password"
+        android:textColorHint="#626262"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:background="@drawable/border_radius"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+
+        android:drawableStart="@drawable/ic_lockx"
+        android:drawablePadding="10dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/user_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <!-- user's Password confirmation -->
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:hint="Confirm password"
+        android:textColorHint="#626262"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:background="@drawable/border_radius"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+
+        android:drawableStart="@drawable/ic_lockx"
+        android:drawablePadding="10dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <!-- Confirmation text before Create Account -->
+    <TextView
+        android:id="@+id/text_confirmation"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text="By clicking the Register button, you agree \n to the public offer."
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <!-- Create Account Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_signin"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#f73657"
+        android:layout_marginTop="30dp"
+        android:text="Create Account"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_confirmation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="8dp"/>
+
+
+    <!-- Text to other options of Sign Up with -->
+    <TextView
+        android:id="@+id/text_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="- OR continue with -"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <!-- Group Of the 3 Options of Sign Up with -->
+    <LinearLayout
+        android:id="@+id/options"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/text_options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <!-- Sign Up with Google -->
+        <ImageButton
+            android:layout_width="60dp"
+            android:background="@drawable/options_radius"
+            android:padding="20dp"
+            android:src="@drawable/ic_google"
+            android:scaleType="centerInside"
+            android:layout_height="match_parent"
+            />
+
+
+        <!-- Space -->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+        <!-- Sign Up with Apple -->
+        <ImageButton
+            android:layout_width="60dp"
+            android:background="@drawable/options_radius"
+            android:padding="20dp"
+            android:src="@drawable/ic_apple"
+            android:scaleType="centerInside"
+            android:layout_height="match_parent"
+            />
+
+
+        <!-- Space -->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+        <!-- Sign Up with Facebook -->
+        <ImageButton
+            android:layout_width="60dp"
+            android:background="@drawable/options_radius"
+            android:padding="15dp"
+            android:src="@drawable/ic_facebook"
+            android:scaleType="centerInside"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+
+    <!-- Login Text Option -->
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/last_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="I Already Have an account "
+            app:layout_constraintTop_toBottomOf="@+id/options"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+        <!-- Login word clickable -->
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f83758"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Login"
+            app:layout_constraintTop_toBottomOf="@+id/options"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    
