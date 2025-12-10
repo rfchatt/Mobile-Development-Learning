@@ -33,7 +33,7 @@
 
 # Practice N-007 ( CC1 )
 ### Questions
-#### Main, Inscription, Login & Profil
+#### Main, Inscription, Login, forgot password & Payment
 <img width="50%" height="25%" alt="image" src="https://github.com/user-attachments/assets/50ca0289-736c-4bf8-ab25-a2eef82b5857" />
 <img width="49%" height="50%" alt="image" src="https://github.com/user-attachments/assets/37553c79-5a35-479c-a60c-56eab71bb948" />
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/d5311696-19f2-457b-bb5b-f530094cd9d2" />
