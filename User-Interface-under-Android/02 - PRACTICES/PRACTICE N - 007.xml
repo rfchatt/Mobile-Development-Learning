@@ -1,0 +1,122 @@
+<!-- 
+path : 
+
+_________________________________________
+-- app --------------------------------- |
+---- manifests ------------------------- |
+-------- AndroidManifest.xml ----------- |    // (carte d'identité d'App)
+---- java+kotlin ----------------------- |    // kotlin's code
+-------- forgotPWActivity -------------- |    
+-------- loginActivity ----------------- |
+-------- MainActivity ------------------ |
+-------- paymentActivity --------------- |
+-------- sign_inActivity --------------- |
+---- res ------------------------------- |
+-------- drawable ---------------------- |    // icons & gradient background
+-------- layout ------------------------ |    // xml files (UI)
+------------ activity_forgot_pw.xml ---- | 
+------------ activity_login.xml -------- | 
+------------ activity_main.xml --------- |
+------------ activity_payment.xml ------ | 
+------------ activity_sign_in.xml ------ |
+_________________________________________|
+-->
+
+
+
+<!-----  AndroidManifest.xml  ----->
+
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_app_icon"
+        android:label="Store 4U"
+        android:roundIcon="@drawable/ic_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Store_4U">
+
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- Sign in Activity -->
+        <activity
+            android:name=".sign_inActivity"
+            android:exported="false"
+            />
+
+
+        <!-- Login Activity -->
+        <activity
+            android:name=".loginActivity"
+            android:exported="false"
+            />
+
+
+        <!-- forgot password Activity -->
+        <activity
+            android:name=".forgotPWActivity"
+            android:exported="false"
+            />
+
+
+        <!-- payment Activity -->
+        <activity
+            android:name=".paymentActivity"
+            android:exported="false"
+            />
+
+    </application>
+
+</manifest>
+
+
+<!-----  forgotPWActivity  ----->
+
+
+package com.example.store_4u
+
+import android.content.Intent
+import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.button.MaterialButton
+
+class forgotPWActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_forgot_pw)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.forgot_pw)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+
+        // Submit Button  -->  payment Activity
+        val btn_login = findViewById<MaterialButton>(R.id.btn_login)
+        btn_login.setOnClickListener {
+            intent = Intent(this, paymentActivity::class.java)
+            startActivity(intent)
+        }
+
+
+    }
+}
+
