@@ -31,4 +31,11 @@
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/1f912a78-a32c-489b-a11c-6bcdb46d6ee9" />
 <img width="49%" height="50%" alt="image" src="https://github.com/user-attachments/assets/4bd1c469-2311-4ea1-b9d1-d0a2a8e97384" />
 
-
+# Practice N-007 ( CC1 )
+### Questions
+#### Main, Inscription, Login & Profil
+<img width="50%" height="25%" alt="image" src="https://github.com/user-attachments/assets/50ca0289-736c-4bf8-ab25-a2eef82b5857" />
+<img width="49%" height="50%" alt="image" src="https://github.com/user-attachments/assets/37553c79-5a35-479c-a60c-56eab71bb948" />
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/d5311696-19f2-457b-bb5b-f530094cd9d2" />
+<img width="49%" height="50%" alt="image" src="https://github.com/user-attachments/assets/291c942e-eadd-42bc-967c-ec794c934472" />
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/0600ef60-ffae-4813-a2b4-0fe5683956e7" />
