@@ -39,3 +39,11 @@
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/d5311696-19f2-457b-bb5b-f530094cd9d2" />
 <img width="49%" height="50%" alt="image" src="https://github.com/user-attachments/assets/291c942e-eadd-42bc-967c-ec794c934472" />
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/0600ef60-ffae-4813-a2b4-0fe5683956e7" />
+
+# Practice N-008 ( TP 7 )
+### Questions
+#### ListView
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/f6afe18c-6fd7-457c-8839-622ddae7d17f" />
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/e9d4fab1-4975-4ebe-ab2d-4534d4df58bb" />
+
+
