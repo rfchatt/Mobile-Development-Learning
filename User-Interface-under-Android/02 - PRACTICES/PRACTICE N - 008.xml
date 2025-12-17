@@ -1,0 +1,79 @@
+
+<!--  Activity List View | activity_listview.xml  -->
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    tools:context=".ListviewActivity">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+
+
+<!--  Activity Items List View | activity_items_listview.xml  -->
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textViewItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:textSize="18sp" />
+
+
+<!--  Activity List View (Kotlin) | ListviewActivity.kt  -->
+
+
+package com.example.renault
+
+import ...
+
+class ListviewActivity : AppCompatActivity () {
+
+    @SuppressLint("ShowToast")
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_listview)
+
+        // Déclaration du tableau de données
+        val listItems = arrayOf(
+            "Renault Arkana", "Renault Clio 5", "Renault Espace",
+            "Renault Austral", "Renault Scenic E-Tech", "Renault Symbioz",
+            "Renault Kangoo", "Renault Twingo", "Renault Clio 4",
+            "Renault Express"
+        )
+
+        // Création de l'Adapter
+        val adapter = ArrayAdapter(
+            this,
+            R.layout.activity_items_listview,
+            R.id.textViewItem,
+            listItems
+        )
+        val listView: ListView = findViewById(R.id.listView)
+        listView.adapter = adapter
+
+        // Ajout d'un écouteur de click
+        listView.setOnItemClickListener { parent, view, position, id ->
+            val selectedItem = listItems[position]
+            Toast.makeText(
+                this,
+                "Vous choisir La Voiture : $selectedItem",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
+
+
+    }
+}
