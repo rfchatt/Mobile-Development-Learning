@@ -43,7 +43,7 @@
 # Practice N-008 ( TP 7 )
 ### Questions
 #### ListView
-<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/f6afe18c-6fd7-457c-8839-622ddae7d17f" />
-<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/e9d4fab1-4975-4ebe-ab2d-4534d4df58bb" />
+<img width="30%" height="50%" alt="image" src="https://github.com/user-attachments/assets/f6afe18c-6fd7-457c-8839-622ddae7d17f" />
+<img width="30%" height="50%" alt="image" src="https://github.com/user-attachments/assets/e9d4fab1-4975-4ebe-ab2d-4534d4df58bb" />
 
 
