@@ -16,3 +16,7 @@
 ### Questions | onSaveInstacnceState() & onRestoreInstanceState() 
 <img width="50%" height="552" alt="image" src="https://github.com/user-attachments/assets/20d12ee4-cabb-4e5e-a0d8-a5b7afd0d029" /><br>
 <img width="25%" height="552" alt="image" src="https://github.com/user-attachments/assets/21f0bc64-ea61-43ee-add6-45ad50c2470d" />
+
+# Practice N-001 ( TP 7 - EX 1 )
+### Questions | BroadcastReceiver() & ..
+<img width="50%" height="676" alt="image" src="https://github.com/user-attachments/assets/84d622ea-487e-46bb-86e8-0ba27a61c4ce" />
