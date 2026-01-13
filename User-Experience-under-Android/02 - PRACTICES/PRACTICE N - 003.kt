@@ -3,18 +3,37 @@
 
 package com.example.application01_12
 
+import android.Manifest
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import android.content.pm.PackageManager
 import android.net.ConnectivityManager
+import android.os.Build
 import android.os.Bundle
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import io.karn.notify.Notify
 
 class MainActivity : AppCompatActivity() {
     lateinit var txt: TextView
+    lateinit var message: String
+
+    // Vérification de permission NOTIFICATION
+    private val requestPermissionLauncher = registerForActivityResult(ActivityResultContracts.RequestPermission()) {
+            isGranted: Boolean ->
+        if (isGranted) {
+            envoyerNotification()
+        } else {
+            Toast.makeText(this, "Notification permission denied", Toast.LENGTH_SHORT).show()
+        }
+    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,7 +55,7 @@ class MainActivity : AppCompatActivity() {
             var info = serviceDe_system.activeNetworkInfo
 
             // message d'info
-            var message = when {
+            message = when {
                 info == null -> "NO Internet/Wifi !.."
                 info.type == ConnectivityManager.TYPE_WIFI -> "Connected to WiFi"
                 info.type == ConnectivityManager.TYPE_MOBILE -> "Connected to Mobile Internet"
@@ -44,7 +63,38 @@ class MainActivity : AppCompatActivity() {
             }
 
             txt.text = message
+            VerifierEtEnvoyer()
         }
+    }
+
+    // le main de fonction de notifiction qui dit : 
+    // Si la permission "GRANTED" autorisé -> alors Appliquer la function "envoyerNotification"
+    // Sinon repeter la question pour l'utilisateur ..
+    private fun VerifierEtEnvoyer() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            when {
+                ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED ->
+                {
+                    envoyerNotification()
+                }
+                else -> {
+                    requestPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
+                }
+            }
+
+        }
+        else {
+            envoyerNotification()
+        }
+    }
+
+    private fun envoyerNotification() {
+        Notify.with(this)
+            .content {
+                title = "New Message"
+                text = message
+            }
+            .show()
     }
 
     override fun onStart() {
