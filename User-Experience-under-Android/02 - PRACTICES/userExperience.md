@@ -19,4 +19,5 @@
 
 # Practice N-001 ( TP 7 - EX 1 )
 ### Questions | BroadcastReceiver() & ..
-<img width="50%" height="676" alt="image" src="https://github.com/user-attachments/assets/84d622ea-487e-46bb-86e8-0ba27a61c4ce" />
+<img width="50%" height="676" alt="image" src="https://github.com/user-attachments/assets/84d622ea-487e-46bb-86e8-0ba27a61c4ce" /><br>
+<img width="25%" height="676" alt="image" src="https://github.com/user-attachments/assets/a08a520b-9bc2-4033-9cc1-9bce326f799c" />
