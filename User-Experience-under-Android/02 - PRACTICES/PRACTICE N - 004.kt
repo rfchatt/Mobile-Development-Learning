@@ -2,17 +2,18 @@
 
 // -------- | MainActivity | --------
 
-package com.example.tp8
+package com.example.workmanager_tp8
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.widget.Constraints
 import androidx.core.view.ViewCompat
-import androidx.work.OneTimeWorkRequestBuilder
 import androidx.core.view.WindowInsetsCompat
+import androidx.work.Constraints
 import androidx.work.NetworkType
+import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
+import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,42 +21,57 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        // 2.Requéts
-        val workRequest = OneTimeWorkRequestBuilder<logWorker>().build()
+        var btn = findViewById<MaterialButton>(R.id.btn)
 
-        // 3.Envoyer a WorkManager
-        WorkManager.getInstance(this).enqueue(workRequest)
+        btn.setOnClickListener {
+
+            // ici les 3 elements de WorkManager dans MainActivity : [Constraints, workRequest et WorkManager]
+
+            // I: Constraints -> الشروط
+            var constraints = Constraints.Builder()
+                .setRequiredNetworkType(NetworkType.CONNECTED)
+                .build()
+
+            // II: Requête ->
+            var workRequest = OneTimeWorkRequestBuilder<myWorker>()
+                .setConstraints(constraints)
+                .build()
+
+            // III: Envoyer to WorkManager
+            WorkManager.getInstance(this).enqueue(workRequest)
+
+        }
 
     }
 }
 
-// -------- | logWorker | --------
+// -------- | myWorker | --------
 
-package com.example.tp8
+package com.example.workmanager_tp8
 
 import android.content.Context
-import android.os.Handler
-import android.os.Looper
 import android.util.Log
-import android.widget.Toast
-import androidx.work.WorkerParameters
 import androidx.work.Worker
+import androidx.work.WorkerParameters
 
-class logWorker (applicationContext: Context, parameters: WorkerParameters) : Worker (applicationContext, parameters) {
+var WorkerManager = "WorkerManager"
 
-    var handler = Handler(Looper.getMainLooper())
+class myWorker (appContext: Context, workerParams: WorkerParameters) : Worker (appContext, workerParams) {
+
+    // ici la Callback function de WorkManager dans la class myWorker(appContext: Context, workerParams: WorkerParameters)
 
     override fun doWork(): Result {
-        return try{
-            handler.post {
-                Log.d("WorkManagerLog", "Welcome back !")
-            }
+
+        Log.d(WorkerManager, "Début de Traitement en arriére-plan..")
+
+        return try {
+            Log.d(WorkerManager, "Bonjour depuis WorkManager !")
             Result.success()
-        }
-        catch (e: Exception) {
-            Log.d("","Erreur $e")
+        } catch (e: Exception) {
+            Log.d(WorkerManager, "Erreur : [${e.message}]")
             Result.failure()
         }
+
     }
 
 }
