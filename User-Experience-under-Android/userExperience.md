@@ -12,12 +12,12 @@
 <img width="25%" height="745" alt="image" src="https://github.com/user-attachments/assets/4f1c9404-5b24-4738-b1eb-44fc0c1b4228" />
 <img width="50%" height="745" alt="image" src="https://github.com/user-attachments/assets/f5de59e4-e8a1-4bdb-b03e-60a4857762b8" />
 
-# Practice N-001 ( TP 6 )
-### Questions | onSaveInstacnceState() & onRestoreInstanceState() 
+# Practice N-002 ( TP . )
+### Questions | ..
 <img width="50%" height="552" alt="image" src="https://github.com/user-attachments/assets/20d12ee4-cabb-4e5e-a0d8-a5b7afd0d029" /><br>
 <img width="25%" height="552" alt="image" src="https://github.com/user-attachments/assets/21f0bc64-ea61-43ee-add6-45ad50c2470d" />
 
-# Practice N-001 ( TP 7 - EX 1 )
+# Practice N-003 ( TP 7 - EX 1 )
 ### Questions | BroadcastReceiver() & ..
 <img width="50%" height="676" alt="image" src="https://github.com/user-attachments/assets/84d622ea-487e-46bb-86e8-0ba27a61c4ce" /><br>
 <img width="25%" height="676" alt="image" src="https://github.com/user-attachments/assets/a08a520b-9bc2-4033-9cc1-9bce326f799c" />
