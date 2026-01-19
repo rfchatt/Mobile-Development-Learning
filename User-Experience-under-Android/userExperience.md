@@ -23,6 +23,11 @@
 <img width="25%" height="676" alt="image" src="https://github.com/user-attachments/assets/a08a520b-9bc2-4033-9cc1-9bce326f799c" />
 
 # Practice N-005 ( TP 10 - EX 1 )
-### Questions | Thread, Coroutines, ProgressBar
+### Questions | Thread, Coroutines, launch
 <img width="50%" height="451" alt="image" src="https://github.com/user-attachments/assets/933a2412-a1c5-43c6-a9d4-b40b9e5a4c27" /><br>
 <img width="50%" height="451" alt="image" src="https://github.com/user-attachments/assets/3d60fe60-4868-41f9-a940-e8bfe5b0dd50" />
+
+# Practice N-006 ( TP 10 - EX 2 )
+### Questions | Thread, Coroutines, launch
+<img width="50%" height="899" alt="image" src="https://github.com/user-attachments/assets/f515bb77-da19-4b04-b9fd-bb6b3e4f0098" /><br>
+<img width="50%" height="899" alt="image" src="https://github.com/user-attachments/assets/fa6736a0-8dba-4cc8-aa8d-a2546d9c0773" />
