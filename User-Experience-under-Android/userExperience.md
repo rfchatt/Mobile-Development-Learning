@@ -31,3 +31,9 @@
 ### Questions | Thread, Coroutines, launch
 <img width="50%" height="899" alt="image" src="https://github.com/user-attachments/assets/f515bb77-da19-4b04-b9fd-bb6b3e4f0098" /><br>
 <img width="50%" height="899" alt="image" src="https://github.com/user-attachments/assets/fa6736a0-8dba-4cc8-aa8d-a2546d9c0773" />
+
+# Practice N-007 ( TP 12 - EX 1 )
+### Questions | JUnit, @Test, { assertEquals, assertThrows, assertTrue / assertFalse }
+<img width="50%" height="577" alt="image" src="https://github.com/user-attachments/assets/01f23b21-18d8-481d-b6c8-e3ec30aa39b1" /><br>
+<img width="50%" height="178" alt="image" src="https://github.com/user-attachments/assets/9d7c9f32-c081-4ee6-b467-40090102edaf" />
+<img width="50%" height="505" alt="image" src="https://github.com/user-attachments/assets/0afc530f-decc-4dc6-a239-09754a99a9f8" />
