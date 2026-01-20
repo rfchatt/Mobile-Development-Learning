@@ -43,4 +43,6 @@
 <img width="50%" height="613" alt="image" src="https://github.com/user-attachments/assets/a7c6dd62-7ffa-481c-9809-a7816313bcba" /><br>
 <img width="50%" height="172" alt="image" src="https://github.com/user-attachments/assets/2f01272d-65ff-4ff1-9b6d-2c441f6c553a" />
 
-
+# Practice N-008 ( TP 12 - EX 3 )
+### Questions | JUnit, @Test
+<img width="50%" height="602" alt="image" src="https://github.com/user-attachments/assets/3bc95b2b-1fcd-45ac-abc2-3303c552c1c2" />
