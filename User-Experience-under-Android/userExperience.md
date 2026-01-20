@@ -37,3 +37,10 @@
 <img width="50%" height="577" alt="image" src="https://github.com/user-attachments/assets/01f23b21-18d8-481d-b6c8-e3ec30aa39b1" /><br>
 <img width="50%" height="178" alt="image" src="https://github.com/user-attachments/assets/9d7c9f32-c081-4ee6-b467-40090102edaf" />
 <img width="50%" height="505" alt="image" src="https://github.com/user-attachments/assets/0afc530f-decc-4dc6-a239-09754a99a9f8" />
+
+# Practice N-008 ( TP 12 - EX 2 )
+### Questions | JUnit, @Test
+<img width="50%" height="613" alt="image" src="https://github.com/user-attachments/assets/a7c6dd62-7ffa-481c-9809-a7816313bcba" /><br>
+<img width="50%" height="172" alt="image" src="https://github.com/user-attachments/assets/2f01272d-65ff-4ff1-9b6d-2c441f6c553a" />
+
+
