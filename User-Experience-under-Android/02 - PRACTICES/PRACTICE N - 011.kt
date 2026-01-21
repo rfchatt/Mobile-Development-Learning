@@ -18,8 +18,9 @@ fun validerMotDePasse (mdp: String): Boolean {
 
 package com.example.test_tps
 
-import kotlin.test.Test
-import kotlin.test.*
+import org.junit.Test
+import org.hamcrest.MatcherAssert.assertThat
+import org.hamcrest.Matchers.*
 
 class PasswordTest {
 
